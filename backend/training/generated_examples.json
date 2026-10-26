@@ -1,0 +1,4541 @@
+{
+ "_about": "Training data for the roast-topic classifier, written by NVIDIA Nemotron (nvidia/nemotron-3.5-super-vl-120b-a12b) with training/generate_examples.py, in the voice of 8 different personas and with shared tie-break rules. It is AI-written, NOT collected from real users. Lines too similar to the hand-written test set (dataset.json) and near-duplicates were removed.",
+ "examples": [
+  {
+   "label": "student_life",
+   "text": "Still laughing at the 2/10 CGPA I got in machine design sir's quiz."
+  },
+  {
+   "label": "student_life",
+   "text": "Hostel chai is stronger than my will to attend 8am thermodynamics class."
+  },
+  {
+   "label": "student_life",
+   "text": "Midsem prep means three Red Bulls and zero sleep before the paper."
+  },
+  {
+   "label": "student_life",
+   "text": "Lab file incomplete, viva tomorrow, and I still don't know what a lathe is."
+  },
+  {
+   "label": "student_life",
+   "text": "Professor asked me to define stress; I defined my own stress levels instead."
+  },
+  {
+   "label": "student_life",
+   "text": "Assignments pile up like dirty clothes in my hostel corner."
+  },
+  {
+   "label": "student_life",
+   "text": "Bunked chemistry lecture to finish a mechanics assignment due yesterday."
+  },
+  {
+   "label": "student_life",
+   "text": "Drawing shear force diagrams while half asleep during the afternoon slot."
+  },
+  {
+   "label": "student_life",
+   "text": "Google Classroom notifications haunt my dreams every single night."
+  },
+  {
+   "label": "student_life",
+   "text": "Copy-pasted last year's lab report and changed only the date."
+  },
+  {
+   "label": "student_life",
+   "text": "Internal marks are lower than my phone's battery percentage right now."
+  },
+  {
+   "label": "student_life",
+   "text": "Solved ten years of previous papers but forgot the calculator in exam hall."
+  },
+  {
+   "label": "student_life",
+   "text": "Notes from three lectures ago are still untouched on my desk."
+  },
+  {
+   "label": "student_life",
+   "text": "Group project means I do everything while others take attendance credit."
+  },
+  {
+   "label": "student_life",
+   "text": "Skipped breakfast because the practical session started at sharp seven."
+  },
+  {
+   "label": "student_life",
+   "text": "My attendance percentage is crying more than I am after seeing results."
+  },
+  {
+   "label": "student_life",
+   "text": "Engineering math feels like a horror movie with no climax."
+  },
+  {
+   "label": "student_life",
+   "text": "Opened the textbook only to use it as a pillow during free hour."
+  },
+  {
+   "label": "student_life",
+   "text": "Asked TA for extension and got laughed out of the staff room."
+  },
+  {
+   "label": "student_life",
+   "text": "Submitted assignment at 11:59 PM with Wi-Fi cutting out mid-upload."
+  },
+  {
+   "label": "student_life",
+   "text": "Wrote 'good luck' on answer sheet instead of the actual derivation."
+  },
+  {
+   "label": "student_life",
+   "text": "Class group chat blows up every time someone posts a circular about internals."
+  },
+  {
+   "label": "student_life",
+   "text": "Front row is reserved for benchers who sleep through every lecture."
+  },
+  {
+   "label": "student_life",
+   "text": "Exam hall silence feels heavier than my backpack full of reference books."
+  },
+  {
+   "label": "student_life",
+   "text": "Practical record unsigned because sir was on leave for two weeks."
+  },
+  {
+   "label": "student_life",
+   "text": "Slept through the alarm and missed the first internal completely."
+  },
+  {
+   "label": "student_life",
+   "text": "Friend asked doubt on WhatsApp and I replied with a meme instead."
+  },
+  {
+   "label": "student_life",
+   "text": "Thesis topic still undecided in final semester, pure panic mode."
+  },
+  {
+   "label": "student_life",
+   "text": "Started preparing for finals two days before, classic engineering special."
+  },
+  {
+   "label": "student_life",
+   "text": "Coffee machine in canteen knows my face better than my HOD does."
+  },
+  {
+   "label": "student_life",
+   "text": "I read the same paragraph five times and still have no idea what it says."
+  },
+  {
+   "label": "student_life",
+   "text": "My planner has coffee stains and zero completed tasks."
+  },
+  {
+   "label": "student_life",
+   "text": "I highlight entire pages hoping the information will osmose into my brain."
+  },
+  {
+   "label": "student_life",
+   "text": "Group chat at 2am asking if the final is cumulative."
+  },
+  {
+   "label": "student_life",
+   "text": "I write to-do lists just to feel productive before napping instead."
+  },
+  {
+   "label": "student_life",
+   "text": "The syllabus is a suggestion I ignore until week ten."
+  },
+  {
+   "label": "student_life",
+   "text": "I attend lecture solely for the participation points and free WiFi."
+  },
+  {
+   "label": "student_life",
+   "text": "My notes are beautiful calligraphy that I never actually review."
+  },
+  {
+   "label": "student_life",
+   "text": "I refresh the grade portal every ten minutes like it owes me money."
+  },
+  {
+   "label": "student_life",
+   "text": "Office hours? I only go when the assignment is due in two hours."
+  },
+  {
+   "label": "student_life",
+   "text": "I cite Wikipedia in my bibliography and pray nobody clicks the link."
+  },
+  {
+   "label": "student_life",
+   "text": "My backpack contains three textbooks I have never opened."
+  },
+  {
+   "label": "student_life",
+   "text": "I set fifteen alarms and still show up twenty minutes late."
+  },
+  {
+   "label": "student_life",
+   "text": "I reuse the same introduction paragraph for every single essay."
+  },
+  {
+   "label": "student_life",
+   "text": "I listen to lectures at double speed and absorb absolutely nothing."
+  },
+  {
+   "label": "student_life",
+   "text": "My desk is a graveyard of energy drinks and forgotten flashcards."
+  },
+  {
+   "label": "student_life",
+   "text": "I tell myself I'll start early and then wait until midnight."
+  },
+  {
+   "label": "student_life",
+   "text": "I format the header for an hour and write the paper in ten minutes."
+  },
+  {
+   "label": "student_life",
+   "text": "I bring a laptop to class and shop for kitchenware the whole time."
+  },
+  {
+   "label": "student_life",
+   "text": "I ask questions just to look engaged while completely lost."
+  },
+  {
+   "label": "student_life",
+   "text": "I color-code my calendar but forget every deadline anyway."
+  },
+  {
+   "label": "student_life",
+   "text": "I read the syllabus once and pretend I remember the late policy."
+  },
+  {
+   "label": "student_life",
+   "text": "I highlight random sentences so my textbook looks studied."
+  },
+  {
+   "label": "student_life",
+   "text": "I email the professor at midnight asking for an extension."
+  },
+  {
+   "label": "student_life",
+   "text": "I survive on vending machine snacks during all-night cramming."
+  },
+  {
+   "label": "student_life",
+   "text": "I take notes on paper and then lose them before the exam."
+  },
+  {
+   "label": "student_life",
+   "text": "I promise myself this semester will be different and it never is."
+  },
+  {
+   "label": "student_life",
+   "text": "I Google the answers during open-book quizzes and still fail."
+  },
+  {
+   "label": "student_life",
+   "text": "I treat the library like a nap pod with better lighting."
+  },
+  {
+   "label": "student_life",
+   "text": "I copy my friend's study guide and change the font."
+  },
+  {
+   "label": "student_life",
+   "text": "woke up at 5am just to cram for bio💀"
+  },
+  {
+   "label": "student_life",
+   "text": "my lecture notes are practically hieroglyphics now"
+  },
+  {
+   "label": "student_life",
+   "text": "group project and i'm doing all the work fr"
+  },
+  {
+   "label": "student_life",
+   "text": "accidentally submitted my essay two minutes before midnight"
+  },
+  {
+   "label": "student_life",
+   "text": "professor said open book but i still failed😭"
+  },
+  {
+   "label": "student_life",
+   "text": "spent all night making a study guide i never used"
+  },
+  {
+   "label": "student_life",
+   "text": "thesis draft is just me crying in document form"
+  },
+  {
+   "label": "student_life",
+   "text": "highlighted the entire textbook but remembered nothing"
+  },
+  {
+   "label": "student_life",
+   "text": "how do i email my teacher without sounding desperate"
+  },
+  {
+   "label": "student_life",
+   "text": "pulled an all nighter for a 10 point quiz"
+  },
+  {
+   "label": "student_life",
+   "text": "my backpack is just crumpled worksheets and old snacks"
+  },
+  {
+   "label": "student_life",
+   "text": "tried to focus in class but my brain left the building"
+  },
+  {
+   "label": "student_life",
+   "text": "professor pop quiz when i didn't even bring a pen"
+  },
+  {
+   "label": "student_life",
+   "text": "finals week has me living off energy drinks and stress"
+  },
+  {
+   "label": "student_life",
+   "text": "why do assignments always pile up on the same day"
+  },
+  {
+   "label": "student_life",
+   "text": "took notes for 40 minutes then doodled for the rest"
+  },
+  {
+   "label": "student_life",
+   "text": "i have 7 tabs open for one single research paper"
+  },
+  {
+   "label": "student_life",
+   "text": "asked for an extension and my soul left my body"
+  },
+  {
+   "label": "student_life",
+   "text": "sleep schedule: nonexistent because of lab reports"
+  },
+  {
+   "label": "student_life",
+   "text": "my gpa is hanging by a thread rn"
+  },
+  {
+   "label": "student_life",
+   "text": "spent 3 hours formatting references and 10 minutes writing"
+  },
+  {
+   "label": "student_life",
+   "text": "why is the lecture hall always freezing cold"
+  },
+  {
+   "label": "student_life",
+   "text": "tried to study but ended up organizing my desk instead"
+  },
+  {
+   "label": "student_life",
+   "text": "my planner is a lie and i know it"
+  },
+  {
+   "label": "student_life",
+   "text": "exam review session lasted longer than the actual test"
+  },
+  {
+   "label": "student_life",
+   "text": "accidentally called my professor mom during class💀"
+  },
+  {
+   "label": "student_life",
+   "text": "no sleep because i had to finish a presentation"
+  },
+  {
+   "label": "student_life",
+   "text": "study group turned into a gossip session real quick"
+  },
+  {
+   "label": "student_life",
+   "text": "my notebook is 50% notes and 50% random scribbles"
+  },
+  {
+   "label": "student_life",
+   "text": "deadline is tomorrow and i haven't even started"
+  },
+  {
+   "label": "student_life",
+   "text": "I still check Canvas at 2 a.m. hoping a grade magically appeared."
+  },
+  {
+   "label": "student_life",
+   "text": "My professor’s syllabus is the only horror story that keeps me up."
+  },
+  {
+   "label": "student_life",
+   "text": "Three assignments due tomorrow and I’ve written exactly one sentence."
+  },
+  {
+   "label": "student_life",
+   "text": "I memorized the lecture slides but forgot how to adult."
+  },
+  {
+   "label": "student_life",
+   "text": "Office hours feel like a therapy session where I cry about calculus."
+  },
+  {
+   "label": "student_life",
+   "text": "My GPA is basically a participation trophy at this point."
+  },
+  {
+   "label": "student_life",
+   "text": "Highlighting every word in the textbook counts as studying, right?"
+  },
+  {
+   "label": "student_life",
+   "text": "I renamed my final project ‘Untitled’ because I ran out of energy."
+  },
+  {
+   "label": "student_life",
+   "text": "The library is my bedroom now; my bed is just for stress naps."
+  },
+  {
+   "label": "student_life",
+   "text": "Group chats are 90% panic and 10% actual notes."
+  },
+  {
+   "label": "student_life",
+   "text": "I opened the PDF and immediately closed it to preserve my sanity."
+  },
+  {
+   "label": "student_life",
+   "text": "Quizlet saved my life and also destroyed my sleep schedule."
+  },
+  {
+   "label": "student_life",
+   "text": "My notes look like a detective board with arrows and question marks."
+  },
+  {
+   "label": "student_life",
+   "text": "I cited Wikipedia once and still feel guilty three years later."
+  },
+  {
+   "label": "student_life",
+   "text": "The registrar’s website crashed exactly when I tried to register."
+  },
+  {
+   "label": "student_life",
+   "text": "I aced the midterm by guessing every answer with confidence."
+  },
+  {
+   "label": "student_life",
+   "text": "Professor asked a question and I pretended my mic was broken."
+  },
+  {
+   "label": "student_life",
+   "text": "My backpack contains three notebooks and existential dread."
+  },
+  {
+   "label": "student_life",
+   "text": "I rewatched the lecture at 2x speed and still zoned out."
+  },
+  {
+   "label": "student_life",
+   "text": "Extra credit is the only thing keeping me enrolled."
+  },
+  {
+   "label": "student_life",
+   "text": "I used a thesaurus to stretch a two-page essay into five."
+  },
+  {
+   "label": "student_life",
+   "text": "The final exam was 50% material we never covered in class."
+  },
+  {
+   "label": "student_life",
+   "text": "I have color-coded folders for classes I stopped attending."
+  },
+  {
+   "label": "student_life",
+   "text": "My transcript reads like a tragic novel with plot twists."
+  },
+  {
+   "label": "student_life",
+   "text": "I brought a laptop to lecture just to play solitaire."
+  },
+  {
+   "label": "student_life",
+   "text": "My thesis draft is mostly placeholders and prayer."
+  },
+  {
+   "label": "student_life",
+   "text": "Study group turned into a gossip session with snacks."
+  },
+  {
+   "label": "student_life",
+   "text": "I emailed the TA at midnight and expected an instant reply."
+  },
+  {
+   "label": "student_life",
+   "text": "Graduation feels like a rumor I keep hearing about."
+  },
+  {
+   "label": "student_life",
+   "text": "I aced the attendance grade but failed the actual material."
+  },
+  {
+   "label": "student_life",
+   "text": "I still use flashcards I made during my sophomore year."
+  },
+  {
+   "label": "student_life",
+   "text": "My planner is just a graveyard of unfinished assignments."
+  },
+  {
+   "label": "student_life",
+   "text": "I aced the midterm but forgot to pick up the kids."
+  },
+  {
+   "label": "student_life",
+   "text": "Cramming at midnight while the house sleeps around me."
+  },
+  {
+   "label": "student_life",
+   "text": "Office hours feel like speed dating with a stranger."
+  },
+  {
+   "label": "student_life",
+   "text": "I highlighted every sentence and now the page is neon."
+  },
+  {
+   "label": "student_life",
+   "text": "Group chat blew up because nobody read the syllabus."
+  },
+  {
+   "label": "student_life",
+   "text": "My thesis outline has more holes than Swiss cheese."
+  },
+  {
+   "label": "student_life",
+   "text": "Three tabs open: lecture, email, and panic."
+  },
+  {
+   "label": "student_life",
+   "text": "I cite Wikipedia in my head but never on paper."
+  },
+  {
+   "label": "student_life",
+   "text": "Lab reports due at 9 AM and I am still in pajamas."
+  },
+  {
+   "label": "student_life",
+   "text": "The professor said participate, so I nodded aggressively."
+  },
+  {
+   "label": "student_life",
+   "text": "My notes look like a conspiracy theory board."
+  },
+  {
+   "label": "student_life",
+   "text": "I retook the quiz and still mixed up the dates."
+  },
+  {
+   "label": "student_life",
+   "text": "Student discounts are the only reason I eat out."
+  },
+  {
+   "label": "student_life",
+   "text": "I scheduled study time but scrolled instead all evening."
+  },
+  {
+   "label": "student_life",
+   "text": "Finals week means surviving on coffee and denial."
+  },
+  {
+   "label": "student_life",
+   "text": "My backpack contains one snack and six crumpled handouts."
+  },
+  {
+   "label": "student_life",
+   "text": "Registration crashed and I missed every class I wanted."
+  },
+  {
+   "label": "student_life",
+   "text": "I wrote the essay at 3 AM and still got an A."
+  },
+  {
+   "label": "student_life",
+   "text": "The grading curve saved my GPA more than once."
+  },
+  {
+   "label": "student_life",
+   "text": "I attend lectures mostly to charge my laptop."
+  },
+  {
+   "label": "student_life",
+   "text": "Study group turned into a wine and gossip session."
+  },
+  {
+   "label": "student_life",
+   "text": "My GPA is a secret I keep from my teenagers."
+  },
+  {
+   "label": "student_life",
+   "text": "I color-coded my schedule and then ignored it completely."
+  },
+  {
+   "label": "student_life",
+   "text": "Extra credit assignments are my only salvation."
+  },
+  {
+   "label": "student_life",
+   "text": "The library is my escape from laundry and dinner."
+  },
+  {
+   "label": "student_life",
+   "text": "I can recite the syllabus but not my spouse's birthday."
+  },
+  {
+   "label": "student_life",
+   "text": "Office hours saved my grade and my dignity."
+  },
+  {
+   "label": "student_life",
+   "text": "I survive on iced coffee and the panic of 11:59 PM submissions."
+  },
+  {
+   "label": "student_life",
+   "text": "My thesis draft has more coffee stains than actual words."
+  },
+  {
+   "label": "student_life",
+   "text": "I treat every lecture like a background podcast I barely hear."
+  },
+  {
+   "label": "student_life",
+   "text": "Office hours? I show up only when the grade panic hits."
+  },
+  {
+   "label": "student_life",
+   "text": "My notes are just colorful highlighters over complete confusion."
+  },
+  {
+   "label": "student_life",
+   "text": "I opened the syllabus once and never looked back again."
+  },
+  {
+   "label": "student_life",
+   "text": "Group projects teach me how to carry dead weight alone."
+  },
+  {
+   "label": "student_life",
+   "text": "I re-read the same paragraph until my eyes glaze over."
+  },
+  {
+   "label": "student_life",
+   "text": "Extension requests are my secret love language with professors."
+  },
+  {
+   "label": "student_life",
+   "text": "Midterms make me question every life choice that led here."
+  },
+  {
+   "label": "student_life",
+   "text": "My desk is a graveyard of abandoned notebooks and pens."
+  },
+  {
+   "label": "student_life",
+   "text": "I write essays at 3 AM with zero citations and pure vibes."
+  },
+  {
+   "label": "student_life",
+   "text": "The library is my bedroom now, send snacks please."
+  },
+  {
+   "label": "student_life",
+   "text": "I highlight everything and somehow retain absolutely nothing."
+  },
+  {
+   "label": "student_life",
+   "text": "Cramming twenty lectures into one night is my cardio."
+  },
+  {
+   "label": "student_life",
+   "text": "Every assignment feels like a personal attack on my free time."
+  },
+  {
+   "label": "student_life",
+   "text": "I nod along in class while completely lost on page one."
+  },
+  {
+   "label": "student_life",
+   "text": "My GPA is just a number I actively try to ignore."
+  },
+  {
+   "label": "student_life",
+   "text": "Quiz days turn me into a human vibe-check machine."
+  },
+  {
+   "label": "student_life",
+   "text": "I schedule study blocks then immediately nap through them."
+  },
+  {
+   "label": "student_life",
+   "text": "Café Wi-Fi cuts out exactly when the upload hits ninety percent."
+  },
+  {
+   "label": "student_life",
+   "text": "Professors say participate, I say let me silently suffer."
+  },
+  {
+   "label": "student_life",
+   "text": "My browser tabs are fifty open lectures and zero focus."
+  },
+  {
+   "label": "student_life",
+   "text": "I cite Wikipedia in my bibliography and pray nobody checks."
+  },
+  {
+   "label": "student_life",
+   "text": "Lecture recordings play at double speed while I scroll."
+  },
+  {
+   "label": "student_life",
+   "text": "I bring my laptop to class and open memes instead."
+  },
+  {
+   "label": "student_life",
+   "text": "Finals week is when I finally learn the course name."
+  },
+  {
+   "label": "student_life",
+   "text": "My planner is filled with due dates I keep missing."
+  },
+  {
+   "label": "student_life",
+   "text": "Class participation points depend on me staying awake."
+  },
+  {
+   "label": "student_life",
+   "text": "Every syllabus week I promise this semester will be different."
+  },
+  {
+   "label": "gaming",
+   "text": "pc costs more than my entire future savings"
+  },
+  {
+   "label": "gaming",
+   "text": "ranked anxiety hits different at 3am"
+  },
+  {
+   "label": "gaming",
+   "text": "console war casualty with no refund"
+  },
+  {
+   "label": "gaming",
+   "text": "discord squad only wakes up for me"
+  },
+  {
+   "label": "gaming",
+   "text": "gacha pity broke me and im not sorry"
+  },
+  {
+   "label": "gaming",
+   "text": "speedrun my entire life into the ground"
+  },
+  {
+   "label": "gaming",
+   "text": "lag spike cost me the whole match"
+  },
+  {
+   "label": "gaming",
+   "text": "controller drift is a personality trait now"
+  },
+  {
+   "label": "gaming",
+   "text": "steam sale emptied my wallet again"
+  },
+  {
+   "label": "gaming",
+   "text": "main character energy but im stuck in tutorial"
+  },
+  {
+   "label": "gaming",
+   "text": "crossplay ruined my kd ratio"
+  },
+  {
+   "label": "gaming",
+   "text": "skin gambling felt like a personality choice"
+  },
+  {
+   "label": "gaming",
+   "text": "controller sweat is my skincare routine"
+  },
+  {
+   "label": "gaming",
+   "text": "ping so high i play in the past"
+  },
+  {
+   "label": "gaming",
+   "text": "free to play until i spend everything"
+  },
+  {
+   "label": "gaming",
+   "text": "esports tryhard in a bronze lobby"
+  },
+  {
+   "label": "gaming",
+   "text": "game over screen knows my face too well"
+  },
+  {
+   "label": "gaming",
+   "text": "microtransaction addiction is just shopping therapy"
+  },
+  {
+   "label": "gaming",
+   "text": "ranked queue longer than my attention span"
+  },
+  {
+   "label": "gaming",
+   "text": "dlc costs more than my actual dinner"
+  },
+  {
+   "label": "gaming",
+   "text": "nintendo switch never leaves my hand"
+  },
+  {
+   "label": "gaming",
+   "text": "fps drop during the clutch moment"
+  },
+  {
+   "label": "gaming",
+   "text": "speedrun world record in procrastinating chores"
+  },
+  {
+   "label": "gaming",
+   "text": "stream sniped my own vibe"
+  },
+  {
+   "label": "gaming",
+   "text": "gaming chair back pain is just commitment"
+  },
+  {
+   "label": "gaming",
+   "text": "palworld base looks better than my room"
+  },
+  {
+   "label": "gaming",
+   "text": "early access buyer with buyer's remorse"
+  },
+  {
+   "label": "gaming",
+   "text": "controller buttons worn down to nothing"
+  },
+  {
+   "label": "gaming",
+   "text": "mmorpg guild drama hits harder than school"
+  },
+  {
+   "label": "gaming",
+   "text": "blew rent money on a virtual sword"
+  },
+  {
+   "label": "gaming",
+   "text": "I preordered five games I’ll never finish within the next decade."
+  },
+  {
+   "label": "gaming",
+   "text": "My Steam library looks like a digital graveyard of unplayed dreams."
+  },
+  {
+   "label": "gaming",
+   "text": "I named my Wi-Fi after a boss that still haunts my nightmares."
+  },
+  {
+   "label": "gaming",
+   "text": "Ranked anxiety hits harder than any final boss encounter I’ve faced."
+  },
+  {
+   "label": "gaming",
+   "text": "I bought a mechanical keyboard just for the satisfying clack sounds."
+  },
+  {
+   "label": "gaming",
+   "text": "Discord pings at 3 a.m. are my only reliable alarm clock anymore."
+  },
+  {
+   "label": "gaming",
+   "text": "Speedrun routes live in my head while real chores gather dust."
+  },
+  {
+   "label": "gaming",
+   "text": "Gacha pulls drained my entire paycheck before rent was due."
+  },
+  {
+   "label": "gaming",
+   "text": "I explain meta builds to teammates who never listen anyway."
+  },
+  {
+   "label": "gaming",
+   "text": "My ping spikes every time the match actually matters most."
+  },
+  {
+   "label": "gaming",
+   "text": "I streamed for three hours with exactly zero viewers watching."
+  },
+  {
+   "label": "gaming",
+   "text": "Lag cost me the clutch and my entire will to keep going."
+  },
+  {
+   "label": "gaming",
+   "text": "Console wars still feel personal even though I’m twenty-four now."
+  },
+  {
+   "label": "gaming",
+   "text": "I finish daily quests before I brush my teeth each morning."
+  },
+  {
+   "label": "gaming",
+   "text": "NPC dialogue options feel more meaningful than my actual text messages."
+  },
+  {
+   "label": "gaming",
+   "text": "I respec’d my build three times in one night over nothing."
+  },
+  {
+   "label": "gaming",
+   "text": "Holiday sales trick me into buying games I already own twice."
+  },
+  {
+   "label": "gaming",
+   "text": "Backseat gaming during someone else’s stream is my secret talent."
+  },
+  {
+   "label": "gaming",
+   "text": "I rage-quit so hard my controller nearly met an early grave."
+  },
+  {
+   "label": "gaming",
+   "text": "Character creator consumes more time than the actual gameplay loop."
+  },
+  {
+   "label": "gaming",
+   "text": "My main save file has more hours than my entire work week."
+  },
+  {
+   "label": "gaming",
+   "text": "New patch notes drop and my entire schedule gets thrown away."
+  },
+  {
+   "label": "gaming",
+   "text": "I argue frame data with strangers while dinner burns on the stove."
+  },
+  {
+   "label": "gaming",
+   "text": "Esports tournaments keep me up until sunrise on weeknights."
+  },
+  {
+   "label": "gaming",
+   "text": "Loot box gambling feels cheaper than actual therapy sessions anyway."
+  },
+  {
+   "label": "gaming",
+   "text": "I main support but secretly want all the kill credit myself."
+  },
+  {
+   "label": "gaming",
+   "text": "Cosplay conventions drain my savings faster than any microtransaction ever could."
+  },
+  {
+   "label": "gaming",
+   "text": "Nostalgia goggles make me replay old games instead of new ones."
+  },
+  {
+   "label": "gaming",
+   "text": "Speedrunning glitches excite me more than real-life shortcuts do."
+  },
+  {
+   "label": "gaming",
+   "text": "My backlog grows faster than I can possibly ever play through it."
+  },
+  {
+   "label": "gaming",
+   "text": "I tell the kids I’ll pause after this boss fight, then another quest spawns."
+  },
+  {
+   "label": "gaming",
+   "text": "My Steam library has more titles than hours in the week."
+  },
+  {
+   "label": "gaming",
+   "text": "I queue ranked while dinner burns on the stove."
+  },
+  {
+   "label": "gaming",
+   "text": "Discord ping at midnight means I’m raiding instead of sleeping."
+  },
+  {
+   "label": "gaming",
+   "text": "Gacha pulls cost more than the school fund this month."
+  },
+  {
+   "label": "gaming",
+   "text": "I respec my character build more often than I reschedule dentist visits."
+  },
+  {
+   "label": "gaming",
+   "text": "Speedrun routes for old platformers live in my head like memos."
+  },
+  {
+   "label": "gaming",
+   "text": "Lag spikes during a clutch play make me yell at the router."
+  },
+  {
+   "label": "gaming",
+   "text": "I name my saves after my children but never load them."
+  },
+  {
+   "label": "gaming",
+   "text": "Console wars still divide my living room after bedtime."
+  },
+  {
+   "label": "gaming",
+   "text": "Streaming gameplay while the toddler screams in the background is my brand."
+  },
+  {
+   "label": "gaming",
+   "text": "Pre-order bonuses and deluxe editions explain my empty savings account."
+  },
+  {
+   "label": "gaming",
+   "text": "I know every NPC dialogue line but forget where I parked the car."
+  },
+  {
+   "label": "gaming",
+   "text": "PC builds get upgraded before the minivan gets an oil change."
+  },
+  {
+   "label": "gaming",
+   "text": "My kill-to-death ratio is higher than my vegetable intake."
+  },
+  {
+   "label": "gaming",
+   "text": "I grind dailies before brushing my teeth in the morning."
+  },
+  {
+   "label": "gaming",
+   "text": "The final boss took three nights and two energy drinks."
+  },
+  {
+   "label": "gaming",
+   "text": "Nostalgia for cartridge blowing keeps me buying retro consoles."
+  },
+  {
+   "label": "gaming",
+   "text": "I whisper strategy tips to my kids during their cartoon time."
+  },
+  {
+   "label": "gaming",
+   "text": "Achievement hunters would respect my pointless platinum trophy collection."
+  },
+  {
+   "label": "gaming",
+   "text": "Microtransactions turned my credit card into a raid boss."
+  },
+  {
+   "label": "gaming",
+   "text": "I talk in gamer slang at parent-teacher conferences by accident."
+  },
+  {
+   "label": "gaming",
+   "text": "New-game-plus runs outlast my New Year’s resolutions."
+  },
+  {
+   "label": "gaming",
+   "text": "My party keeps waiting while I argue with support tickets."
+  },
+  {
+   "label": "gaming",
+   "text": "I’ve mastered parry timing but not the art of folding laundry."
+  },
+  {
+   "label": "gaming",
+   "text": "Voice chat friends know my schedule better than my spouse."
+  },
+  {
+   "label": "gaming",
+   "text": "Legendary drop rates feel fairer than my kids’ bedtime routine."
+  },
+  {
+   "label": "gaming",
+   "text": "I bought a gaming chair but still sit on the floor with the kids."
+  },
+  {
+   "label": "gaming",
+   "text": "Patch notes drop and my entire evening evaporates instantly."
+  },
+  {
+   "label": "gaming",
+   "text": "I queue ranked matches at 3am instead of answering client emails."
+  },
+  {
+   "label": "gaming",
+   "text": "My ping spikes every time my laptop hits the cafe power limit."
+  },
+  {
+   "label": "gaming",
+   "text": "I grinded one speedrun route for six hours while my invoices waited."
+  },
+  {
+   "label": "gaming",
+   "text": "Gacha pulls ate my budget before my rent got paid."
+  },
+  {
+   "label": "gaming",
+   "text": "I main a healer but can't heal my own backlog of projects."
+  },
+  {
+   "label": "gaming",
+   "text": "Discord pings pull me away from deep work more than notifications do."
+  },
+  {
+   "label": "gaming",
+   "text": "Lag killed my clutch and my motivation to start the deck."
+  },
+  {
+   "label": "gaming",
+   "text": "Console exclusive drops make me forget my timezone completely."
+  },
+  {
+   "label": "gaming",
+   "text": "I respec my build nightly but never reschedule my missed calls."
+  },
+  {
+   "label": "gaming",
+   "text": "Speedrun strats live in my notes; client briefs live nowhere."
+  },
+  {
+   "label": "gaming",
+   "text": "My frame drops whenever the cafe WiFi chooses a new victim."
+  },
+  {
+   "label": "gaming",
+   "text": "I streamed my setup tour but never streamed an actual deliverable."
+  },
+  {
+   "label": "gaming",
+   "text": "Ranked anxiety hits harder than any deadline I have ignored."
+  },
+  {
+   "label": "gaming",
+   "text": "Loot boxes promise dopamine that my to-do list never will."
+  },
+  {
+   "label": "gaming",
+   "text": "I switched servers to escape toxicity and lost track of invoices."
+  },
+  {
+   "label": "gaming",
+   "text": "Controller drift mirrors my career progress perfectly."
+  },
+  {
+   "label": "gaming",
+   "text": "Nightly marathon sessions turn my tomorrow into never."
+  },
+  {
+   "label": "gaming",
+   "text": "PC build upgrades cost more than my last three gigs combined."
+  },
+  {
+   "label": "gaming",
+   "text": "My KDA is stellar; my invoice rate is embarrassing."
+  },
+  {
+   "label": "gaming",
+   "text": "I camp spawn points while opportunities walk right past me."
+  },
+  {
+   "label": "gaming",
+   "text": "Patch notes distract me more than any brief ever could."
+  },
+  {
+   "label": "gaming",
+   "text": "I overclocked my rig but underclocked my ambition."
+  },
+  {
+   "label": "gaming",
+   "text": "Game soundtracks play while I stare blankly at an empty doc."
+  },
+  {
+   "label": "gaming",
+   "text": "Twitch emotes are my only social interaction some days."
+  },
+  {
+   "label": "gaming",
+   "text": "Respawn timers feel shorter than my clients' patience."
+  },
+  {
+   "label": "gaming",
+   "text": "I unlocked every trophy but forgot to file my taxes."
+  },
+  {
+   "label": "gaming",
+   "text": "Lag-switch excuses work in games, not with clients."
+  },
+  {
+   "label": "gaming",
+   "text": "My library has hundreds of unplayed titles and one half-done proposal."
+  },
+  {
+   "label": "gaming",
+   "text": "I rerolled for a better character but never rerolled my bad habits."
+  },
+  {
+   "label": "gaming",
+   "text": "Speedruns finish in minutes; my side project stalls for years."
+  },
+  {
+   "label": "gaming",
+   "text": "Game nights run late and my mornings run later."
+  },
+  {
+   "label": "gaming",
+   "text": "Gaming wins over everything except school."
+  },
+  {
+   "label": "gaming",
+   "text": "My ping stays below twenty, unlike my dating standards."
+  },
+  {
+   "label": "gaming",
+   "text": "Lost a ranked match because I saw a cute profile picture mid-game."
+  },
+  {
+   "label": "gaming",
+   "text": "My Steam backlog has more entries than my ex's red flags list."
+  },
+  {
+   "label": "gaming",
+   "text": "I will speedrun this date if the loot is not good enough."
+  },
+  {
+   "label": "gaming",
+   "text": "Console wars are the only wars I actually want to fight."
+  },
+  {
+   "label": "gaming",
+   "text": "Discord squad vibes only, unless you main support."
+  },
+  {
+   "label": "gaming",
+   "text": "Gacha pulls destroyed my savings before my first paycheck arrived."
+  },
+  {
+   "label": "gaming",
+   "text": "Lag is the only thing that ever ghosts me back."
+  },
+  {
+   "label": "gaming",
+   "text": "I main the chaotic neutral class in every relationship."
+  },
+  {
+   "label": "gaming",
+   "text": "Speedrunning my morning routine just to queue on time."
+  },
+  {
+   "label": "gaming",
+   "text": "My build is glass cannon, but my dating app profile is a shield."
+  },
+  {
+   "label": "gaming",
+   "text": "Ranked anxiety hits harder than any breakup text."
+  },
+  {
+   "label": "gaming",
+   "text": "Streaming my gameplay to an empty chat feels familiar now."
+  },
+  {
+   "label": "gaming",
+   "text": "PC builds cost more than my last three vacations combined."
+  },
+  {
+   "label": "gaming",
+   "text": "Game characters understand me better than most humans do."
+  },
+  {
+   "label": "gaming",
+   "text": "I will dodge skillshots but never dodge your calls."
+  },
+  {
+   "label": "gaming",
+   "text": "My mouse has more RGB lighting than my personality."
+  },
+  {
+   "label": "gaming",
+   "text": "Waiting for a patch to fix my commitment issues."
+  },
+  {
+   "label": "gaming",
+   "text": "The only league I care about has no dating advice."
+  },
+  {
+   "label": "gaming",
+   "text": "Loot boxes gave me better odds than swiping right."
+  },
+  {
+   "label": "gaming",
+   "text": "My KDA is immaculate, my text game is not."
+  },
+  {
+   "label": "gaming",
+   "text": "I pause single player games to check if you messaged me."
+  },
+  {
+   "label": "gaming",
+   "text": "Gaming chairs support my back better than my ex ever did."
+  },
+  {
+   "label": "gaming",
+   "text": "I spent six hours grinding for a mount I never ride."
+  },
+  {
+   "label": "gaming",
+   "text": "My ping spikes every time I try to flirt."
+  },
+  {
+   "label": "gaming",
+   "text": "Ranked seasons feel more stable than my last situationship."
+  },
+  {
+   "label": "gaming",
+   "text": "PC overheats when I get excited about a new match."
+  },
+  {
+   "label": "gaming",
+   "text": "I carry the team but cannot carry a conversation."
+  },
+  {
+   "label": "gaming",
+   "text": "Loot drops more frequently than my replies to dry texters."
+  },
+  {
+   "label": "gaming",
+   "text": "My gaming headset picks up more signal than my love life."
+  },
+  {
+   "label": "procrastination",
+   "text": "Billing cycle chhuta rehta hoon, bhai samajh nahi aata kab pay karna"
+  },
+  {
+   "label": "procrastination",
+   "text": "Electricity bill padh ke side pe rakh deta hoon, phir kabhi nahi"
+  },
+  {
+   "label": "procrastination",
+   "text": "Suno na mai apne kaam ko kal pe chod deta hoon"
+  },
+  {
+   "label": "procrastination",
+   "text": "Appointments book kar leta hoon phir cancel kar deta hoon"
+  },
+  {
+   "label": "procrastination",
+   "text": "Snooze maaro, phir maaro, phir kaam bhul jao"
+  },
+  {
+   "label": "procrastination",
+   "text": "Email ka draft banaya, bhej nahi kar raha"
+  },
+  {
+   "label": "procrastination",
+   "text": "Laundry ka dher lag gaya, abhi nahi karna"
+  },
+  {
+   "label": "procrastination",
+   "text": "Flat ko arrange karne ka plan hai, start nahi kiya"
+  },
+  {
+   "label": "procrastination",
+   "text": "Plan banane mein itna time lag jata hoon ki kaam hi nahi hota"
+  },
+  {
+   "label": "procrastination",
+   "text": "Tomorrow se shuru karunga, yeh sentence roz bolta hoon"
+  },
+  {
+   "label": "procrastination",
+   "text": "Grocery list bana hai, market nahi ja raha"
+  },
+  {
+   "label": "procrastination",
+   "text": "Work emails ke liye reminder lagaya, phir ignore kiya"
+  },
+  {
+   "label": "procrastination",
+   "text": "Document file download ki, abhi nahi khola"
+  },
+  {
+   "label": "procrastination",
+   "text": "Kiraye ka cheque sign nahi ho raha hoon"
+  },
+  {
+   "label": "procrastination",
+   "text": "Weekend pe sara kaam karunga, aisa roz hota hai"
+  },
+  {
+   "label": "procrastination",
+   "text": "Starting Monday se routine thik kar lunga"
+  },
+  {
+   "label": "procrastination",
+   "text": "Bills pay karna hai, par kal se shuru karenge"
+  },
+  {
+   "label": "procrastination",
+   "text": "App delete karke phir download kar liya, kaam wala nahi kiya"
+  },
+  {
+   "label": "procrastination",
+   "text": "Kaam ko ignore karke phone scroll kar raha hoon"
+  },
+  {
+   "label": "procrastination",
+   "text": "Task list bana hai, abhi tak ek bhi nahi kiya"
+  },
+  {
+   "label": "procrastination",
+   "text": "I’ll sort the paperwork tomorrow, after I nap."
+  },
+  {
+   "label": "procrastination",
+   "text": "Dishes stay stacked until someone begs."
+  },
+  {
+   "label": "procrastination",
+   "text": "My inbox is a graveyard of unopened emails."
+  },
+  {
+   "label": "procrastination",
+   "text": "Bills collect dust on my kitchen table."
+  },
+  {
+   "label": "procrastination",
+   "text": "I’ll call the dentist… next payday."
+  },
+  {
+   "label": "procrastination",
+   "text": "Laundry waits until I wear the last sock."
+  },
+  {
+   "label": "procrastination",
+   "text": "Every appointment gets rescheduled twice."
+  },
+  {
+   "label": "procrastination",
+   "text": "Snooze button has my loyalty until noon."
+  },
+  {
+   "label": "procrastination",
+   "text": "Garbage goes out when the bin can’t close."
+  },
+  {
+   "label": "procrastination",
+   "text": "I’m great at planning the start I never begin."
+  },
+  {
+   "label": "procrastination",
+   "text": "Grocery list lives only in my head."
+  },
+  {
+   "label": "procrastination",
+   "text": "I’ll fix that leaky faucet… eventually."
+  },
+  {
+   "label": "procrastination",
+   "text": "Work deadline sneaks up while I daydream."
+  },
+  {
+   "label": "procrastination",
+   "text": "I say ‘I’ll do it after lunch’ every lunch."
+  },
+  {
+   "label": "procrastination",
+   "text": "Emails sit unanswered until they’re irrelevant."
+  },
+  {
+   "label": "procrastination",
+   "text": "My to-do list is fiction I write nightly."
+  },
+  {
+   "label": "procrastination",
+   "text": "I’ll schedule the oil change before winter."
+  },
+  {
+   "label": "procrastination",
+   "text": "Dust bunnies know my routines better than I do."
+  },
+  {
+   "label": "procrastination",
+   "text": "I’ll reply to that text in a month."
+  },
+  {
+   "label": "procrastination",
+   "text": "The vacuum only runs for guests."
+  },
+  {
+   "label": "procrastination",
+   "text": "I plan my week while ignoring today."
+  },
+  {
+   "label": "procrastination",
+   "text": "Mowing happens when neighbors start talking."
+  },
+  {
+   "label": "procrastination",
+   "text": "I’ll organize the closet during retirement."
+  },
+  {
+   "label": "procrastination",
+   "text": "I renew library books indefinitely."
+  },
+  {
+   "label": "procrastination",
+   "text": "Post office trip happens when stamps run out."
+  },
+  {
+   "label": "procrastination",
+   "text": "I’ll water the plants after vacation."
+  },
+  {
+   "label": "procrastination",
+   "text": "Taxes wait until the final hour."
+  },
+  {
+   "label": "procrastination",
+   "text": "I pay subscriptions I never use."
+  },
+  {
+   "label": "procrastination",
+   "text": "I’ll start the project on Monday."
+  },
+  {
+   "label": "procrastination",
+   "text": "The spill is still there until I forget it."
+  },
+  {
+   "label": "procrastination",
+   "text": "i literally showered at 3am because i still have to fold laundry since yesterday"
+  },
+  {
+   "label": "procrastination",
+   "text": "my sink is growing its own ecosystem and i keep saying tomorrow"
+  },
+  {
+   "label": "procrastination",
+   "text": "snoozed my alarm for dentist so many times they probably canceled me"
+  },
+  {
+   "label": "procrastination",
+   "text": "i said i'd start eating better monday and it's been three months"
+  },
+  {
+   "label": "procrastination",
+   "text": "bills are piling up while i reorganize my bookmark folder for the fifth time"
+  },
+  {
+   "label": "procrastination",
+   "text": "mailbox has letters from december and i walk past it daily"
+  },
+  {
+   "label": "procrastination",
+   "text": "i have a sticky note that says pay rent and i stare at it"
+  },
+  {
+   "label": "procrastination",
+   "text": "vacuum cleaner judges me every time i walk into the living room"
+  },
+  {
+   "label": "procrastination",
+   "text": "said i'd return that sweater weeks ago and it's still by the door"
+  },
+  {
+   "label": "procrastination",
+   "text": "my inbox has unread messages from my dentist, mechanic, and landlord"
+  },
+  {
+   "label": "procrastination",
+   "text": "i plan to deep clean my room but instead i rearrange my pens"
+  },
+  {
+   "label": "procrastination",
+   "text": "appointment reminder keeps popping up and i swipe it away like it's nothing"
+  },
+  {
+   "label": "procrastination",
+   "text": "i told my mom i'd call her back and it's been two weeks"
+  },
+  {
+   "label": "procrastination",
+   "text": "dishes are basically a modern art installation in my sink at this point"
+  },
+  {
+   "label": "procrastination",
+   "text": "i keep saying i'll start my skincare routine tomorrow but never do"
+  },
+  {
+   "label": "procrastination",
+   "text": "trash has been waiting to go out since i don't even remember when"
+  },
+  {
+   "label": "procrastination",
+   "text": "i organized my desktop icons instead of emailing my boss back"
+  },
+  {
+   "label": "procrastination",
+   "text": "i said i'd start journaling on the first and it's already the fifteenth"
+  },
+  {
+   "label": "procrastination",
+   "text": "my phone is full of reminders i created and immediately dismissed"
+  },
+  {
+   "label": "procrastination",
+   "text": "i told myself i'd meal prep and now i'm eating cereal at midnight"
+  },
+  {
+   "label": "procrastination",
+   "text": "post office line scared me so now i have five packages at home"
+  },
+  {
+   "label": "procrastination",
+   "text": "i said i'd fix my bike and it's been collecting dust in the garage"
+  },
+  {
+   "label": "procrastination",
+   "text": "i keep delaying my haircut because i can't bring myself to book it"
+  },
+  {
+   "label": "procrastination",
+   "text": "i said i'd start waking up early and i've set ten alarms i ignore"
+  },
+  {
+   "label": "procrastination",
+   "text": "my laundry basket is overflowing and i keep buying new socks instead"
+  },
+  {
+   "label": "procrastination",
+   "text": "i promised i'd water the plants and they're basically crispy now"
+  },
+  {
+   "label": "procrastination",
+   "text": "i told myself i'd start reading that book and it's still on page two"
+  },
+  {
+   "label": "procrastination",
+   "text": "i avoid opening my bank app because i know i need to transfer money"
+  },
+  {
+   "label": "procrastination",
+   "text": "i said i'd clean out my closet and now i just stare at the clothes"
+  },
+  {
+   "label": "procrastination",
+   "text": "i keep saying i'll start tomorrow and tomorrow never actually comes"
+  },
+  {
+   "label": "procrastination",
+   "text": "I promised myself I’d pay that electricity bill before sunset, yet here I am rearranging my bookmarks folder."
+  },
+  {
+   "label": "procrastination",
+   "text": "My emails have been sitting unanswered since Tuesday while I reorganise my spice rack alphabetically."
+  },
+  {
+   "label": "procrastination",
+   "text": "Laundry mountain has its own weather system because I keep telling myself Sunday is the day."
+  },
+  {
+   "label": "procrastination",
+   "text": "I’ll start that dentist appointment call right after this one short video, which somehow became four."
+  },
+  {
+   "label": "procrastination",
+   "text": "The leaky tap has been dripping for three weeks while I wait for motivation to strike at 2 a.m."
+  },
+  {
+   "label": "procrastination",
+   "text": "I bought a cactus and still haven’t watered it because tomorrow feels like a better day for plant care."
+  },
+  {
+   "label": "procrastination",
+   "text": "My unread messages are aging like fine cheese while I perfect my playlist for a party that isn’t happening."
+  },
+  {
+   "label": "procrastination",
+   "text": "Filing my taxes is definitely happening next month, or the month after, or whenever panic finally arrives."
+  },
+  {
+   "label": "procrastination",
+   "text": "I snoozed my reminder to book the train tickets until the only seats left were backwards-facing ones."
+  },
+  {
+   "label": "procrastination",
+   "text": "The expired milk is conducting a science experiment in my fridge because I keep postponing the grocery run."
+  },
+  {
+   "label": "procrastination",
+   "text": "I should return that online order but the return label is buried under three weeks of unopened mail."
+  },
+  {
+   "label": "procrastination",
+   "text": "Starting Monday is my favourite day of the week because it never actually arrives on my calendar."
+  },
+  {
+   "label": "procrastination",
+   "text": "My landlord’s repair request has been drafted in my notes app since the last century."
+  },
+  {
+   "label": "procrastination",
+   "text": "I’ll call my insurance provider after I finish reorganising my desktop icons by colour and vibe."
+  },
+  {
+   "label": "procrastination",
+   "text": "The broken toaster still lives on my counter because I need the perfect energy to tackle appliance repair."
+  },
+  {
+   "label": "procrastination",
+   "text": "My passport renewal form is a coaster on my desk while I pretend it doesn’t exist."
+  },
+  {
+   "label": "procrastination",
+   "text": "I’m avoiding the vacuum cleaner like it owes me money, so the crumbs are throwing a rave."
+  },
+  {
+   "label": "procrastination",
+   "text": "That dental check-up reminder keeps getting swiped away while I research the history of paper clips."
+  },
+  {
+   "label": "procrastination",
+   "text": "I should wash my sheets but instead I’m timing how long I can stare at the ceiling before guilt kicks in."
+  },
+  {
+   "label": "procrastination",
+   "text": "The package return deadline passed yesterday and I’m still writing the email in my head."
+  },
+  {
+   "label": "procrastination",
+   "text": "My phone storage is full of screenshots I meant to sort through back when I had free time."
+  },
+  {
+   "label": "procrastination",
+   "text": "Booking that doctor’s appointment is on my to-do list somewhere between never and not today."
+  },
+  {
+   "label": "procrastination",
+   "text": "I’m letting the recycling pile grow because the bins are too far and my willpower is too short."
+  },
+  {
+   "label": "procrastination",
+   "text": "The expired yogurt is having a silent competition with my motivation to clean the fridge."
+  },
+  {
+   "label": "procrastination",
+   "text": "I keep telling myself I’ll start the DIY shelf assembly after this snack, which started three hours ago."
+  },
+  {
+   "label": "procrastination",
+   "text": "My unopened bank statements are forming a paper fort while I wait for a surge of adulting energy."
+  },
+  {
+   "label": "procrastination",
+   "text": "That birthday card I bought last month is still unwritten because the perfect message hasn’t arrived."
+  },
+  {
+   "label": "procrastination",
+   "text": "I’ll fix my wobbly chair leg once I find the right screwdriver, which I lost in 2021."
+  },
+  {
+   "label": "procrastination",
+   "text": "The dust on my keyboard is spelling out my procrastination story while I blame the messy room."
+  },
+  {
+   "label": "procrastination",
+   "text": "I have a full bucket of mop water sitting there because I got distracted by a random Wikipedia rabbit hole."
+  },
+  {
+   "label": "procrastination",
+   "text": "I’ll pay that electricity bill once the universe aligns."
+  },
+  {
+   "label": "procrastination",
+   "text": "My calendar screams October; I swear the dentist visit was next month."
+  },
+  {
+   "label": "procrastination",
+   "text": "Dishwasher loading is a future-version-of-me problem."
+  },
+  {
+   "label": "procrastination",
+   "text": "I rewrote my grocery list four times but never went to the store."
+  },
+  {
+   "label": "procrastination",
+   "text": "Snoozing my alarm feels like a full-time career I never applied for."
+  },
+  {
+   "label": "procrastination",
+   "text": "Those thank-you cards have been waiting since last winter."
+  },
+  {
+   "label": "procrastination",
+   "text": "I’ll organize the garage exactly when pigs learn to fly."
+  },
+  {
+   "label": "procrastination",
+   "text": "Tax season finds me deep in a Wikipedia hole about clouds."
+  },
+  {
+   "label": "procrastination",
+   "text": "Laundry baskets multiply faster than I can fold them."
+  },
+  {
+   "label": "procrastination",
+   "text": "The vet appointment reminder has been swiped away fourteen times."
+  },
+  {
+   "label": "procrastination",
+   "text": "Starting Monday is my favorite fictional holiday."
+  },
+  {
+   "label": "procrastination",
+   "text": "I ordered the parts to fix the sink three weeks ago."
+  },
+  {
+   "label": "procrastination",
+   "text": "My inbox has unread messages from a time before smartphones."
+  },
+  {
+   "label": "procrastination",
+   "text": "I’ll water the plants after this very important nap."
+  },
+  {
+   "label": "procrastination",
+   "text": "The pile of mail by the door has its own gravitational pull."
+  },
+  {
+   "label": "procrastination",
+   "text": "Returning that sweater requires effort I simply do not possess."
+  },
+  {
+   "label": "procrastination",
+   "text": "I book haircuts and then forget calendars exist."
+  },
+  {
+   "label": "procrastination",
+   "text": "Dusting the shelves waits for a burst of motivation that never comes."
+  },
+  {
+   "label": "procrastination",
+   "text": "I’ll reply to that email when pigs develop email addresses."
+  },
+  {
+   "label": "procrastination",
+   "text": "My to-do list is just a graveyard of good intentions."
+  },
+  {
+   "label": "procrastination",
+   "text": "Fixing the wobbly chair is next year’s version of me’s job."
+  },
+  {
+   "label": "procrastination",
+   "text": "I bought a planner to track all the things I never start."
+  },
+  {
+   "label": "procrastination",
+   "text": "The garbage has been waiting for a heroic moment since Tuesday."
+  },
+  {
+   "label": "procrastination",
+   "text": "I’ll schedule the eye exam once I remember where my phone is."
+  },
+  {
+   "label": "procrastination",
+   "text": "Those library books are building a permanent residence under my bed."
+  },
+  {
+   "label": "procrastination",
+   "text": "I deep-clean the oven only in my vivid daydreams."
+  },
+  {
+   "label": "procrastination",
+   "text": "Paying the subscription feels like negotiating with a villain."
+  },
+  {
+   "label": "procrastination",
+   "text": "My car registration expired during a particularly engrossing sitcom."
+  },
+  {
+   "label": "procrastination",
+   "text": "I’ll wash the windows when the rain decides to cooperate."
+  },
+  {
+   "label": "procrastination",
+   "text": "The broken toaster stares at me every morning and I look away."
+  },
+  {
+   "label": "procrastination",
+   "text": "My unread emails have started writing their own sad poetry."
+  },
+  {
+   "label": "procrastination",
+   "text": "Bills wait so long they develop vintage value."
+  },
+  {
+   "label": "procrastination",
+   "text": "I will clean the kitchen tomorrow, definitely tomorrow."
+  },
+  {
+   "label": "procrastination",
+   "text": "Laundry mountain has its own postal code now."
+  },
+  {
+   "label": "procrastination",
+   "text": "Snoozing life admin until it whispers my name."
+  },
+  {
+   "label": "procrastination",
+   "text": "The dentist called, I ghosted him like a bad date."
+  },
+  {
+   "label": "procrastination",
+   "text": "Grocery lists become ancient artifacts in my notes app."
+  },
+  {
+   "label": "procrastination",
+   "text": "I plan to start exercising next Monday, forever."
+  },
+  {
+   "label": "procrastination",
+   "text": "Voicemails pile up like unopened holiday cards."
+  },
+  {
+   "label": "procrastination",
+   "text": "My to-do list is a fiction novel I never finish."
+  },
+  {
+   "label": "procrastination",
+   "text": "Dust bunnies throw parties while I scroll endlessly."
+  },
+  {
+   "label": "procrastination",
+   "text": "Renewing my passport feels like a quest for next year."
+  },
+  {
+   "label": "procrastination",
+   "text": "I water plants only when they file formal complaints."
+  },
+  {
+   "label": "procrastination",
+   "text": "Tax season arrives and I immediately book a vacation."
+  },
+  {
+   "label": "procrastination",
+   "text": "Subscription renewals surprise me every single month."
+  },
+  {
+   "label": "procrastination",
+   "text": "The broken chair gets fixed in my imagination only."
+  },
+  {
+   "label": "procrastination",
+   "text": "I reply to messages three weeks later with excuses."
+  },
+  {
+   "label": "procrastination",
+   "text": "Garbage night finds me still in my pajamas."
+  },
+  {
+   "label": "procrastination",
+   "text": "Booking appointments is a skill I actively avoid."
+  },
+  {
+   "label": "procrastination",
+   "text": "My fridge contents conduct their own science experiments."
+  },
+  {
+   "label": "procrastination",
+   "text": "Returning library books happens after the apocalypse."
+  },
+  {
+   "label": "procrastination",
+   "text": "I organize my desktop icons instead of working."
+  },
+  {
+   "label": "procrastination",
+   "text": "Lightbulb changes require a congressional act in my home."
+  },
+  {
+   "label": "procrastination",
+   "text": "Unopened mail becomes decorative wall art over time."
+  },
+  {
+   "label": "procrastination",
+   "text": "I schedule calls then cancel them with vague lies."
+  },
+  {
+   "label": "procrastination",
+   "text": "Feeding the parking meter is a game I always lose."
+  },
+  {
+   "label": "procrastination",
+   "text": "My car wash appointment has been rescheduled since 2019."
+  },
+  {
+   "label": "procrastination",
+   "text": "I file receipts into a folder called 'someday',"
+  },
+  {
+   "label": "procrastination",
+   "text": "Vacuuming the rug waits for a meteor strike."
+  },
+  {
+   "label": "procrastination",
+   "text": "Changing bed sheets is a seasonal event, not weekly."
+  },
+  {
+   "label": "procrastination",
+   "text": "I’ll start cleaning the apartment once this episode finishes."
+  },
+  {
+   "label": "procrastination",
+   "text": "Bills sit unopened until the final reminder arrives."
+  },
+  {
+   "label": "procrastination",
+   "text": "My to-do list grows faster than I cross anything off."
+  },
+  {
+   "label": "procrastination",
+   "text": "Waiting until Monday to begin that new habit."
+  },
+  {
+   "label": "procrastination",
+   "text": "I reorganise my desk instead of answering emails."
+  },
+  {
+   "label": "procrastination",
+   "text": "Grocery shopping happens only when the fridge is empty."
+  },
+  {
+   "label": "procrastination",
+   "text": "Laundry piles up until I wear the same hoodie twice."
+  },
+  {
+   "label": "procrastination",
+   "text": "I’ll book that dentist appointment next month, probably."
+  },
+  {
+   "label": "procrastination",
+   "text": "Snoozing the alarm until the meeting starts without me."
+  },
+  {
+   "label": "procrastination",
+   "text": "Tax documents stay in a folder marked ‘later’."
+  },
+  {
+   "label": "procrastination",
+   "text": "I plan dinner while takeout arrives for the third night."
+  },
+  {
+   "label": "procrastination",
+   "text": "The trash goes out when it can no longer fit in the bin."
+  },
+  {
+   "label": "procrastination",
+   "text": "I’ll reply to that text after I finish this scroll."
+  },
+  {
+   "label": "procrastination",
+   "text": "Vacuuming waits for a sudden burst of motivation."
+  },
+  {
+   "label": "procrastination",
+   "text": "Mending clothes means safety pins holding everything together."
+  },
+  {
+   "label": "procrastination",
+   "text": "I buy planners I never open to organize my tasks."
+  },
+  {
+   "label": "procrastination",
+   "text": "Waiting for inspiration to strike before washing dishes."
+  },
+  {
+   "label": "procrastination",
+   "text": "Renewing my passport is a project for next year."
+  },
+  {
+   "label": "procrastination",
+   "text": "I’ll fold the laundry once I finish watching this."
+  },
+  {
+   "label": "procrastination",
+   "text": "My email inbox is a graveyard of unread messages."
+  },
+  {
+   "label": "procrastination",
+   "text": "Paying the parking ticket is tomorrow’s problem."
+  },
+  {
+   "label": "procrastination",
+   "text": "I water the plants only when they look dramatic."
+  },
+  {
+   "label": "procrastination",
+   "text": "Putting off haircuts until my bangs block my vision."
+  },
+  {
+   "label": "procrastination",
+   "text": "I reschedule the vet visit because I’m busy tomorrow."
+  },
+  {
+   "label": "procrastination",
+   "text": "Cooking feels like a task for a future version of me."
+  },
+  {
+   "label": "procrastination",
+   "text": "I’ll sort through the mail once I find the right folder."
+  },
+  {
+   "label": "procrastination",
+   "text": "The leaky faucet drips while I promise to fix it."
+  },
+  {
+   "label": "procrastination",
+   "text": "Buying a gift happens the morning of the birthday."
+  },
+  {
+   "label": "procrastination",
+   "text": "I’ll begin the workout routine after this season ends."
+  },
+  {
+   "label": "procrastination",
+   "text": "My car needs an oil change since last winter."
+  },
+  {
+   "label": "productivity",
+   "text": "I have seven habit trackers but never finish the actual task."
+  },
+  {
+   "label": "productivity",
+   "text": "Notion templates color-coded down to the last page, zero productivity."
+  },
+  {
+   "label": "productivity",
+   "text": "My calendar blocks every minute yet I stare at the wall."
+  },
+  {
+   "label": "productivity",
+   "text": "Spent three hours optimising my to-do list instead of doing it."
+  },
+  {
+   "label": "productivity",
+   "text": "Bullet journal has more pages than my engineering notebook."
+  },
+  {
+   "label": "productivity",
+   "text": "Pomodoro timer running while I scroll Instagram reels."
+  },
+  {
+   "label": "productivity",
+   "text": "I alphabetise my daily checklist but never tick anything."
+  },
+  {
+   "label": "productivity",
+   "text": "Life-hack videos watched at 2x speed, zero applied."
+  },
+  {
+   "label": "productivity",
+   "text": "Morning routine planned to the second, wake up at noon."
+  },
+  {
+   "label": "productivity",
+   "text": "Syncing four planner apps while assignments pile up."
+  },
+  {
+   "label": "productivity",
+   "text": "My Google Calendar is a work of art, my life is chaos."
+  },
+  {
+   "label": "productivity",
+   "text": "Spent ₹500 on a productivity app I never opened."
+  },
+  {
+   "label": "productivity",
+   "text": "Optimised my sleep schedule but haven't slept in two days."
+  },
+  {
+   "label": "productivity",
+   "text": "Routine so detailed it takes longer than the work itself."
+  },
+  {
+   "label": "productivity",
+   "text": "Habit streak of thirty days on an app I don't use."
+  },
+  {
+   "label": "productivity",
+   "text": "Kanban board for brushing my teeth, still forget to floss."
+  },
+  {
+   "label": "productivity",
+   "text": "I reorganise my desktop icons instead of studying."
+  },
+  {
+   "label": "productivity",
+   "text": "Time-blocked my entire week and ignored every block."
+  },
+  {
+   "label": "productivity",
+   "text": "Productivity porn at 3 AM, engineering practical at 9 AM."
+  },
+  {
+   "label": "productivity",
+   "text": "My to-do list has sub-tasks with sub-tasks and zero progress."
+  },
+  {
+   "label": "productivity",
+   "text": "My Bullet Journal is more organized than my life."
+  },
+  {
+   "label": "productivity",
+   "text": "I have 12 habit trackers and zero habits."
+  },
+  {
+   "label": "productivity",
+   "text": "Color-coding my calendar doesn't stop me from being late."
+  },
+  {
+   "label": "productivity",
+   "text": "Notion templates are my only personality trait."
+  },
+  {
+   "label": "productivity",
+   "text": "I spend hours optimizing how to spend my minutes."
+  },
+  {
+   "label": "productivity",
+   "text": "My to-do list has its own to-do list."
+  },
+  {
+   "label": "productivity",
+   "text": "Pomodoro timers rule my every waking second."
+  },
+  {
+   "label": "productivity",
+   "text": "I bought a planner to track my planner usage."
+  },
+  {
+   "label": "productivity",
+   "text": "Routine optimization is my full-time side hustle."
+  },
+  {
+   "label": "productivity",
+   "text": "I alphabetize my spice rack during work breaks."
+  },
+  {
+   "label": "productivity",
+   "text": "My morning routine takes longer than my workday."
+  },
+  {
+   "label": "productivity",
+   "text": "I treat laundry like a project management sprint."
+  },
+  {
+   "label": "productivity",
+   "text": "Syncing three apps just to remember one email."
+  },
+  {
+   "label": "productivity",
+   "text": "My Google Calendar has more events than my social life."
+  },
+  {
+   "label": "productivity",
+   "text": "I optimize my commute down to the second."
+  },
+  {
+   "label": "productivity",
+   "text": "Productivity porn is my preferred late-night scrolling."
+  },
+  {
+   "label": "productivity",
+   "text": "I have a dashboard for my dashboard."
+  },
+  {
+   "label": "productivity",
+   "text": "Snoozing my alarm is a system failure."
+  },
+  {
+   "label": "productivity",
+   "text": "My notes app has a folder for empty folders."
+  },
+  {
+   "label": "productivity",
+   "text": "I gamified brushing my teeth with streaks."
+  },
+  {
+   "label": "productivity",
+   "text": "Life hacks replace actually living my life."
+  },
+  {
+   "label": "productivity",
+   "text": "My wardrobe is organized by workflow efficiency."
+  },
+  {
+   "label": "productivity",
+   "text": "I schedule spontaneity between 2 and 3 PM."
+  },
+  {
+   "label": "productivity",
+   "text": "My inbox zero lasts exactly four minutes."
+  },
+  {
+   "label": "productivity",
+   "text": "I use a Gantt chart for weekend errands."
+  },
+  {
+   "label": "productivity",
+   "text": "Optimizing my sleep schedule keeps me awake."
+  },
+  {
+   "label": "productivity",
+   "text": "I have a template for how to relax."
+  },
+  {
+   "label": "productivity",
+   "text": "My productivity stack cost more than my laptop."
+  },
+  {
+   "label": "productivity",
+   "text": "I review my KPIs before I say good morning."
+  },
+  {
+   "label": "productivity",
+   "text": "i color code my to-do list more than i actually do the tasks"
+  },
+  {
+   "label": "productivity",
+   "text": "notion dashboard has seven linked databases and i still havent showered"
+  },
+  {
+   "label": "productivity",
+   "text": "gamified my chores with an app but i keep losing to myself"
+  },
+  {
+   "label": "productivity",
+   "text": "my morning routine is a 45 minute notion template and then i nap"
+  },
+  {
+   "label": "productivity",
+   "text": "spent three hours optimizing my notion setup instead of doing work"
+  },
+  {
+   "label": "productivity",
+   "text": "habit tracker streak is fake because i backfill everything at midnight"
+  },
+  {
+   "label": "productivity",
+   "text": "i bullet journal my procrastination in perfect calligraphy"
+  },
+  {
+   "label": "productivity",
+   "text": "pomodoro timer running while i reorganize my desk for the fifth time"
+  },
+  {
+   "label": "productivity",
+   "text": "life admin takes three apps and i still forget to eat"
+  },
+  {
+   "label": "productivity",
+   "text": "my calendar is blocks of deep work that never happen"
+  },
+  {
+   "label": "productivity",
+   "text": "notion is my personality now and i dont know how to stop"
+  },
+  {
+   "label": "productivity",
+   "text": "i track my sleep hydration and mood but never actually fix anything"
+  },
+  {
+   "label": "productivity",
+   "text": "apple watch rings are closed but my assignments arent"
+  },
+  {
+   "label": "productivity",
+   "text": "i bought a productivity course and never opened it"
+  },
+  {
+   "label": "productivity",
+   "text": "daily standup with myself in the mirror about tasks i wont do"
+  },
+  {
+   "label": "productivity",
+   "text": "optimized my google calendar so perfectly there is no room to breathe"
+  },
+  {
+   "label": "productivity",
+   "text": "habitica character died because i stopped logging real tasks"
+  },
+  {
+   "label": "productivity",
+   "text": "my notes app has twenty folders and zero finished projects"
+  },
+  {
+   "label": "productivity",
+   "text": "rereading the same self help book for the third time this month"
+  },
+  {
+   "label": "productivity",
+   "text": "i plan my week on sunday and abandon it by monday 9am"
+  },
+  {
+   "label": "productivity",
+   "text": "trello board for my laundry with labels and due dates"
+  },
+  {
+   "label": "productivity",
+   "text": "life hack: making a pretty to do list and calling it progress"
+  },
+  {
+   "label": "productivity",
+   "text": "obsidian graph looks like a spider web and i still cant focus"
+  },
+  {
+   "label": "productivity",
+   "text": "smartwatch reminds me to stand while i sit planning my day"
+  },
+  {
+   "label": "productivity",
+   "text": "i have three habit trackers and none of them match"
+  },
+  {
+   "label": "productivity",
+   "text": "bullet journal future log goes out to 2027 and today is blank"
+  },
+  {
+   "label": "productivity",
+   "text": "notion template gallery is my shopping addiction"
+  },
+  {
+   "label": "productivity",
+   "text": "i time block my free time and then resent the calendar"
+  },
+  {
+   "label": "productivity",
+   "text": "productivity porn is my only hobby now"
+  },
+  {
+   "label": "productivity",
+   "text": "routines so rigid they broke when i sneezed"
+  },
+  {
+   "label": "productivity",
+   "text": "I color-code my calendar but never open it"
+  },
+  {
+   "label": "productivity",
+   "text": "My notepad app has forty folders and zero entries"
+  },
+  {
+   "label": "productivity",
+   "text": "I spent three hours building a workflow to save ten minutes"
+  },
+  {
+   "label": "productivity",
+   "text": "Bullet journal is twenty pages deep, first task still blank"
+  },
+  {
+   "label": "productivity",
+   "text": "I reorganize my to-do list instead of doing anything on it"
+  },
+  {
+   "label": "productivity",
+   "text": "Morning routine takes longer than my actual shift"
+  },
+  {
+   "label": "productivity",
+   "text": "Habit tracker shows perfect streaks for things I never do"
+  },
+  {
+   "label": "productivity",
+   "text": "I bought six planners and use none of them"
+  },
+  {
+   "label": "productivity",
+   "text": "Automation scripts now manage my procrastination"
+  },
+  {
+   "label": "productivity",
+   "text": "My desktop has fifty shortcuts to apps I forgot exist"
+  },
+  {
+   "label": "productivity",
+   "text": "I optimize my commute route but still arrive late"
+  },
+  {
+   "label": "productivity",
+   "text": "Life admin dashboard has more widgets than actual results"
+  },
+  {
+   "label": "productivity",
+   "text": "I time-block my breaks but ignore the work blocks"
+  },
+  {
+   "label": "productivity",
+   "text": "Notion workspace looks like a spaceship cockpit"
+  },
+  {
+   "label": "productivity",
+   "text": "I review my productivity metrics during company meetings"
+  },
+  {
+   "label": "productivity",
+   "text": "New routine starts every Monday and dies by Tuesday"
+  },
+  {
+   "label": "productivity",
+   "text": "I categorize emails by urgency but never reply"
+  },
+  {
+   "label": "productivity",
+   "text": "My phone home screen is just folders inside folders"
+  },
+  {
+   "label": "productivity",
+   "text": "Pomodoro timer runs while I stare at the wall"
+  },
+  {
+   "label": "productivity",
+   "text": "I write to-do lists about making to-do lists"
+  },
+  {
+   "label": "productivity",
+   "text": "Optimized my sleep schedule but I am still tired"
+  },
+  {
+   "label": "productivity",
+   "text": "Project management board for my grocery shopping"
+  },
+  {
+   "label": "productivity",
+   "text": "I alphabetize my bookmarks but never click them"
+  },
+  {
+   "label": "productivity",
+   "text": "Daily stand-up with myself about tasks I invented"
+  },
+  {
+   "label": "productivity",
+   "text": "I use three different habit apps simultaneously"
+  },
+  {
+   "label": "productivity",
+   "text": "My goals document has sub-goals for the sub-goals"
+  },
+  {
+   "label": "productivity",
+   "text": "I set twelve alarms to wake up at six"
+  },
+  {
+   "label": "productivity",
+   "text": "Life admin takes up my entire weekend"
+  },
+  {
+   "label": "productivity",
+   "text": "I color-code my sticky notes by emotional priority"
+  },
+  {
+   "label": "productivity",
+   "text": "My todo app has more notifications than my kids."
+  },
+  {
+   "label": "productivity",
+   "text": "I color-code every habit but never start the task."
+  },
+  {
+   "label": "productivity",
+   "text": "I optimize my day so much there's no time left."
+  },
+  {
+   "label": "productivity",
+   "text": "New planner bought, old planner never opened."
+  },
+  {
+   "label": "productivity",
+   "text": "I track screen time while ignoring the kids."
+  },
+  {
+   "label": "productivity",
+   "text": "My calendar blocks include time to unblock my calendar."
+  },
+  {
+   "label": "productivity",
+   "text": "Productivity apps are my favorite form of procrastination."
+  },
+  {
+   "label": "productivity",
+   "text": "I reorganize my workflow instead of doing the work."
+  },
+  {
+   "label": "productivity",
+   "text": "My to-do list has nested sub-tasks for brushing teeth."
+  },
+  {
+   "label": "productivity",
+   "text": "I spend weekends setting up systems I won't use."
+  },
+  {
+   "label": "productivity",
+   "text": "Life hack: I optimize the optimization itself."
+  },
+  {
+   "label": "productivity",
+   "text": "My inbox zero never lasts past breakfast."
+  },
+  {
+   "label": "productivity",
+   "text": "I habit-stack so much I forget the original habit."
+  },
+  {
+   "label": "productivity",
+   "text": "Routine apps know my day better than I do."
+  },
+  {
+   "label": "productivity",
+   "text": "I automate chores but still don't do them."
+  },
+  {
+   "label": "productivity",
+   "text": "My daily schedule looks like a space shuttle launch."
+  },
+  {
+   "label": "productivity",
+   "text": "I track my focus score while scrolling TikTok."
+  },
+  {
+   "label": "productivity",
+   "text": "Productivity porn is my guilty pleasure."
+  },
+  {
+   "label": "productivity",
+   "text": "My bullet journal is art, not action."
+  },
+  {
+   "label": "productivity",
+   "text": "I organize my notifications with three different apps before I check any of them."
+  },
+  {
+   "label": "productivity",
+   "text": "I color-coded my to-do list so thoroughly that I forgot what the tasks were."
+  },
+  {
+   "label": "productivity",
+   "text": "Habit tracker streaks are my only source of validation."
+  },
+  {
+   "label": "productivity",
+   "text": "I built a Notion dashboard just to decide which app to open first."
+  },
+  {
+   "label": "productivity",
+   "text": "Every new planner promises a transformed version of me that never arrives."
+  },
+  {
+   "label": "productivity",
+   "text": "I time-block my coffee breaks and feel guilty when they run over."
+  },
+  {
+   "label": "productivity",
+   "text": "My calendar has more meetings with myself than with clients."
+  },
+  {
+   "label": "productivity",
+   "text": "I review my weekly analytics before I review my actual bank account."
+  },
+  {
+   "label": "productivity",
+   "text": "Productivity porn is my favorite genre and I never produce anything."
+  },
+  {
+   "label": "productivity",
+   "text": "I automate tasks that take less time to do manually."
+  },
+  {
+   "label": "productivity",
+   "text": "My desktop folders have subfolders with their own naming conventions."
+  },
+  {
+   "label": "productivity",
+   "text": "I wrote a script to track how much time I spend tracking my time."
+  },
+  {
+   "label": "productivity",
+   "text": "Bullet journal migrations are my version of emotional processing."
+  },
+  {
+   "label": "productivity",
+   "text": "I optimize my workflow so much that I have no workflow left."
+  },
+  {
+   "label": "productivity",
+   "text": "Gamified chores still feel like chores, but with badges."
+  },
+  {
+   "label": "productivity",
+   "text": "I batch-process my life like I’m a CPU with burnout."
+  },
+  {
+   "label": "productivity",
+   "text": "Routines are my personality now, and I have no hobbies."
+  },
+  {
+   "label": "productivity",
+   "text": "I use a pomodoro timer to time how long I avoid starting the pomodoro."
+  },
+  {
+   "label": "productivity",
+   "text": "Dashboard aesthetics matter more to me than the data inside them."
+  },
+  {
+   "label": "productivity",
+   "text": "I schedule spontaneity and then reschedule it when I’m not in the mood."
+  },
+  {
+   "label": "productivity",
+   "text": "My to-do app has a to-do app."
+  },
+  {
+   "label": "productivity",
+   "text": "I’ve optimized my procrastination into a repeatable system."
+  },
+  {
+   "label": "productivity",
+   "text": "Weekly reviews are the only meetings I never miss."
+  },
+  {
+   "label": "productivity",
+   "text": "I treat my focus like a limited edition collectible I never spend."
+  },
+  {
+   "label": "productivity",
+   "text": "I alphabetize my browser bookmarks by emotional urgency."
+  },
+  {
+   "label": "productivity",
+   "text": "My notes app contains notes about which notes app to use."
+  },
+  {
+   "label": "productivity",
+   "text": "I wake up at 5 AM to plan the rest of the day I’ll spend scrolling."
+  },
+  {
+   "label": "productivity",
+   "text": "Flow state is a myth I chase with twenty different browser extensions."
+  },
+  {
+   "label": "productivity",
+   "text": "I colour-code my deadlines before I open my textbook."
+  },
+  {
+   "label": "productivity",
+   "text": "Notion dashboard has more tabs than my brain."
+  },
+  {
+   "label": "productivity",
+   "text": "I reorganised my planner instead of writing the essay."
+  },
+  {
+   "label": "productivity",
+   "text": "Habit tracker shows consistency I do not actually have."
+  },
+  {
+   "label": "productivity",
+   "text": "Bullet journal aesthetic is my only completed assignment."
+  },
+  {
+   "label": "productivity",
+   "text": "Spent two hours picking the perfect productivity app."
+  },
+  {
+   "label": "productivity",
+   "text": "Early bird routine that ends at noon every day."
+  },
+  {
+   "label": "productivity",
+   "text": "Life optimised on paper, chaos in reality."
+  },
+  {
+   "label": "productivity",
+   "text": "Notion template bought, never actually used."
+  },
+  {
+   "label": "productivity",
+   "text": "I time-block my procrastination down to the minute."
+  },
+  {
+   "label": "productivity",
+   "text": "Productivity porn scrolled at 2am instead of sleeping."
+  },
+  {
+   "label": "productivity",
+   "text": "Routine so rigid it snapped before week one."
+  },
+  {
+   "label": "productivity",
+   "text": "Kanban board for laundry I never fold."
+  },
+  {
+   "label": "productivity",
+   "text": "To-do list longer than my reading list."
+  },
+  {
+   "label": "productivity",
+   "text": "I optimised my workflow and achieved nothing."
+  },
+  {
+   "label": "productivity",
+   "text": "Hustle culture aesthetic, zero actual output."
+  },
+  {
+   "label": "productivity",
+   "text": "Morning pages written while lectures play unheard."
+  },
+  {
+   "label": "productivity",
+   "text": "App stack so complex I forget the task."
+  },
+  {
+   "label": "productivity",
+   "text": "Colour-coded modules, zero module comprehension."
+  },
+  {
+   "label": "productivity",
+   "text": "Systems designer who cannot submit on Canvas."
+  },
+  {
+   "label": "productivity",
+   "text": "Weekly review of goals I never set."
+  },
+  {
+   "label": "productivity",
+   "text": "Planner sticker collection worth more than my GPA."
+  },
+  {
+   "label": "productivity",
+   "text": "I automate my avoidance with clever shortcuts."
+  },
+  {
+   "label": "productivity",
+   "text": "Digital workspace pristine, actual desk a disaster."
+  },
+  {
+   "label": "productivity",
+   "text": "Time-tracking proves I spend hours organising."
+  },
+  {
+   "label": "productivity",
+   "text": "I routinised my life into total paralysis."
+  },
+  {
+   "label": "productivity",
+   "text": "Productivity system more detailed than my degree."
+  },
+  {
+   "label": "productivity",
+   "text": "I color-code my calendar before I color-code my socks."
+  },
+  {
+   "label": "productivity",
+   "text": "Six different habit trackers, zero actual hobbies."
+  },
+  {
+   "label": "productivity",
+   "text": "I batch-process my text messages like emails."
+  },
+  {
+   "label": "productivity",
+   "text": "Morning routine takes ninety minutes; the day takes three."
+  },
+  {
+   "label": "productivity",
+   "text": "My planner has a planner for its own backup."
+  },
+  {
+   "label": "productivity",
+   "text": "I optimize downtime until there is none left."
+  },
+  {
+   "label": "productivity",
+   "text": "Pomodoro sessions scheduled around other Pomodoro sessions."
+  },
+  {
+   "label": "productivity",
+   "text": "Inbox zero is my only relationship goal."
+  },
+  {
+   "label": "productivity",
+   "text": "Life admin gets its own Gantt chart."
+  },
+  {
+   "label": "productivity",
+   "text": "I route every decision through a spreadsheet first."
+  },
+  {
+   "label": "productivity",
+   "text": "My bullet journal indexes its own indexes."
+  },
+  {
+   "label": "productivity",
+   "text": "Weekly review meetings with myself run overtime."
+  },
+  {
+   "label": "productivity",
+   "text": "Automation scripts for my grocery list."
+  },
+  {
+   "label": "productivity",
+   "text": "I treat weekend chores like a sprint retrospective."
+  },
+  {
+   "label": "productivity",
+   "text": "Productivity apps have their own folder on my phone."
+  },
+  {
+   "label": "productivity",
+   "text": "I time-box my spontaneity."
+  },
+  {
+   "label": "productivity",
+   "text": "My sleep schedule runs on agile sprints."
+  },
+  {
+   "label": "productivity",
+   "text": "To-do app notifications are my love language."
+  },
+  {
+   "label": "productivity",
+   "text": "I outsourced my motivation to a Kanban board."
+  },
+  {
+   "label": "productivity",
+   "text": "Every free hour gets allocated before it exists."
+  },
+  {
+   "label": "productivity",
+   "text": "My morning pages have KPIs."
+  },
+  {
+   "label": "productivity",
+   "text": "I track my tracking habits."
+  },
+  {
+   "label": "productivity",
+   "text": "Life goals broken into quarterly OKRs."
+  },
+  {
+   "label": "productivity",
+   "text": "I batch small talk into calendar blocks."
+  },
+  {
+   "label": "productivity",
+   "text": "A not-to-do list longer than my to-do list."
+  },
+  {
+   "label": "productivity",
+   "text": "I run stand-ups for my houseplants."
+  },
+  {
+   "label": "productivity",
+   "text": "Optimizing my procrastination workflow."
+  },
+  {
+   "label": "productivity",
+   "text": "My bedtime routine has a project charter."
+  },
+  {
+   "label": "general",
+   "text": "I order tea at 3am just to feel seen by the delivery uncle."
+  },
+  {
+   "label": "general",
+   "text": "My phone gallery has 400 screenshots of memes I will never open again."
+  },
+  {
+   "label": "general",
+   "text": "I reheated the same samosa three times before finally eating it cold."
+  },
+  {
+   "label": "general",
+   "text": "I say namaste to stray dogs and wait for them to bless me back."
+  },
+  {
+   "label": "general",
+   "text": "I buy fancy stationery but write everything on the back of old bus tickets."
+  },
+  {
+   "label": "general",
+   "text": "My wardrobe has one favourite hoodie and ten shirts I barely touch."
+  },
+  {
+   "label": "general",
+   "text": "I practice conversations with my reflection before ordering coffee."
+  },
+  {
+   "label": "general",
+   "text": "I save Instagram reels of recipes I will never actually cook."
+  },
+  {
+   "label": "general",
+   "text": "I water my money plant only when I remember it exists, which is rare."
+  },
+  {
+   "label": "general",
+   "text": "I hum film songs while brushing my teeth and forget to spit."
+  },
+  {
+   "label": "general",
+   "text": "I bought a cricket bat last summer and used it once to kill a spider."
+  },
+  {
+   "label": "general",
+   "text": "My earphones are permanently tangled like my plans for the weekend."
+  },
+  {
+   "label": "general",
+   "text": "I laugh at my own jokes in the middle of quiet auto-rickshaw rides."
+  },
+  {
+   "label": "general",
+   "text": "I collect random bus tickets and cannot bring myself to throw them away."
+  },
+  {
+   "label": "general",
+   "text": "I press the lift button five times because I believe it works faster."
+  },
+  {
+   "label": "general",
+   "text": "I name my houseplants after Bollywood villains and talk to them daily."
+  },
+  {
+   "label": "general",
+   "text": "I wear socks with holes because throwing them feels like betrayal."
+  },
+  {
+   "label": "general",
+   "text": "I rehearse my order at the chaat stall while standing in line."
+  },
+  {
+   "label": "general",
+   "text": "I keep a spare charger in every bag and still borrow one from friends."
+  },
+  {
+   "label": "general",
+   "text": "I stare at the ceiling fan until it feels like a old friend watching me."
+  },
+  {
+   "label": "general",
+   "text": "I pack snacks for short trips and eat them all before reaching the destination."
+  },
+  {
+   "label": "general",
+   "text": "I set five alarms and wake up only after my mother shouts from the kitchen."
+  },
+  {
+   "label": "general",
+   "text": "I save discount coupons forever and use them after they expire."
+  },
+  {
+   "label": "general",
+   "text": "I talk to my pressure cooker while waiting for the whistle."
+  },
+  {
+   "label": "general",
+   "text": "I arrange my bookshelf by colour but never read the books."
+  },
+  {
+   "label": "general",
+   "text": "I reply to texts three days later with just an emoji."
+  },
+  {
+   "label": "general",
+   "text": "I buy mangoes by the kilo and share none with my siblings."
+  },
+  {
+   "label": "general",
+   "text": "I hum the same advertisement jingle all day and irritate everyone at home."
+  },
+  {
+   "label": "general",
+   "text": "I carry an umbrella even when the sky is clear just in case."
+  },
+  {
+   "label": "general",
+   "text": "I eat noodles with a fork because I ran out of clean spoons."
+  },
+  {
+   "label": "general",
+   "text": "I pretend to sleep when the doorbell rings so I do not have to answer."
+  },
+  {
+   "label": "general",
+   "text": "I can't go to sleep unless the closet doors are completely shut."
+  },
+  {
+   "label": "general",
+   "text": "I cry during dog food commercials almost every single time."
+  },
+  {
+   "label": "general",
+   "text": "My houseplants survive only because I forget to water them."
+  },
+  {
+   "label": "general",
+   "text": "I reheat the same cup of coffee four times every morning."
+  },
+  {
+   "label": "general",
+   "text": "I talk to my car like it is a person when traffic is bad."
+  },
+  {
+   "label": "general",
+   "text": "I buy fancy candles but never light them because they smell too good."
+  },
+  {
+   "label": "general",
+   "text": "I spend twenty minutes picking the perfect avocado at the store."
+  },
+  {
+   "label": "general",
+   "text": "I wave back at strangers who were actually waving at someone behind me."
+  },
+  {
+   "label": "general",
+   "text": "I own three identical black sweaters because decision making is hard."
+  },
+  {
+   "label": "general",
+   "text": "I sing to my cat in a full opera voice while she ignores me."
+  },
+  {
+   "label": "general",
+   "text": "I set five alarms and still manage to wake up ten minutes late."
+  },
+  {
+   "label": "general",
+   "text": "I save every gift bag I receive just in case I need one later."
+  },
+  {
+   "label": "general",
+   "text": "I talk to the self-checkout machine when it freezes up on me."
+  },
+  {
+   "label": "general",
+   "text": "I buy books I never read because the covers look pretty on my shelf."
+  },
+  {
+   "label": "general",
+   "text": "I have argued with a GPS for taking the long way home."
+  },
+  {
+   "label": "general",
+   "text": "I eat cereal for dinner at least twice a week without shame."
+  },
+  {
+   "label": "general",
+   "text": "I wave at my neighbors even though I do not know their names."
+  },
+  {
+   "label": "general",
+   "text": "I keep a drawer full of random cords I do not recognize."
+  },
+  {
+   "label": "general",
+   "text": "I hum the same song all day until my partner begs me to stop."
+  },
+  {
+   "label": "general",
+   "text": "I buy the same brand of socks so I never have to match pairs."
+  },
+  {
+   "label": "general",
+   "text": "I apologize to furniture when I accidentally bump into it."
+  },
+  {
+   "label": "general",
+   "text": "I scroll through photos of my dog while sitting in the same room as him."
+  },
+  {
+   "label": "general",
+   "text": "I order takeout just because I do not want to wash one single pan."
+  },
+  {
+   "label": "general",
+   "text": "I laugh way too loud in quiet waiting rooms."
+  },
+  {
+   "label": "general",
+   "text": "I reheat pizza in the oven even though the microwave is faster."
+  },
+  {
+   "label": "general",
+   "text": "I organize my spice rack once a year and then forget where things go."
+  },
+  {
+   "label": "general",
+   "text": "I wave at delivery drivers like they are old friends from high school."
+  },
+  {
+   "label": "general",
+   "text": "I buy scented trash bags because regular ones feel too depressing."
+  },
+  {
+   "label": "general",
+   "text": "I forget why I walked into a room at least five times daily."
+  },
+  {
+   "label": "general",
+   "text": "im just here cause i eat cereal at 3am and consider it dinner"
+  },
+  {
+   "label": "general",
+   "text": "i talk to my cat more than actual humans and he judges me"
+  },
+  {
+   "label": "general",
+   "text": "my spotify wrapped is just sad songs on repeat for three weeks"
+  },
+  {
+   "label": "general",
+   "text": "i order the same mcdonalds meal every single time and still act surprised"
+  },
+  {
+   "label": "general",
+   "text": "i rearranged my bookshelf by color at 2am for absolutely no reason"
+  },
+  {
+   "label": "general",
+   "text": "i wave at strangers thinking theyre my friends then have to walk away slowly"
+  },
+  {
+   "label": "general",
+   "text": "i save every screenshot thinking ill need it someday but i never do"
+  },
+  {
+   "label": "general",
+   "text": "i spend twenty minutes picking a netflix show then just watch the office again"
+  },
+  {
+   "label": "general",
+   "text": "i cry over dog videos but dry my eyes before anyone walks in"
+  },
+  {
+   "label": "general",
+   "text": "my fridge has expired condiments older than my phone"
+  },
+  {
+   "label": "general",
+   "text": "i laugh at my own jokes way too loud when im nervous"
+  },
+  {
+   "label": "general",
+   "text": "i collect keychains i dont need and lose the actual keys"
+  },
+  {
+   "label": "general",
+   "text": "i reheat my coffee five times and drink it lukewarm anyway"
+  },
+  {
+   "label": "general",
+   "text": "i write lists of groceries i forget at home and buy snacks instead"
+  },
+  {
+   "label": "general",
+   "text": "i say bless you to my dog when he sneezes like hes a person"
+  },
+  {
+   "label": "general",
+   "text": "i wear hoodies in summer because i like pockets"
+  },
+  {
+   "label": "general",
+   "text": "i text my mom asking what to cook then order pizza"
+  },
+  {
+   "label": "general",
+   "text": "i pretend to know what song is playing at parties just to fit in"
+  },
+  {
+   "label": "general",
+   "text": "i leave my laundry in the basket for a week then wear wrinkled shirts"
+  },
+  {
+   "label": "general",
+   "text": "i buy plants and forget to water them until they look dramatic"
+  },
+  {
+   "label": "general",
+   "text": "i hum the same tune for hours until my sibling begs me to stop"
+  },
+  {
+   "label": "general",
+   "text": "i take ten selfies and delete nine because my eyes look weird"
+  },
+  {
+   "label": "general",
+   "text": "i laugh so hard at memes i snort in quiet places"
+  },
+  {
+   "label": "general",
+   "text": "i save restaurant receipts like theyre concert tickets"
+  },
+  {
+   "label": "general",
+   "text": "i rehearse conversations in the shower that will never happen"
+  },
+  {
+   "label": "general",
+   "text": "i order extra nuggets then share none with anyone"
+  },
+  {
+   "label": "general",
+   "text": "i bite my pens until they have no ink left"
+  },
+  {
+   "label": "general",
+   "text": "i blame the wifi when my video buffers but its just my router"
+  },
+  {
+   "label": "general",
+   "text": "i set five alarms and snooze every single one"
+  },
+  {
+   "label": "general",
+   "text": "i call my best friend just to breathe on the phone in silence"
+  },
+  {
+   "label": "general",
+   "text": "I order the same burrito every Tuesday and judge the cashier when they forget the guac."
+  },
+  {
+   "label": "general",
+   "text": "My houseplants survive because I accidentally set calendar reminders to water them."
+  },
+  {
+   "label": "general",
+   "text": "I cry at dog commercials but never at actual funerals."
+  },
+  {
+   "label": "general",
+   "text": "I have worn the same lucky hoodie to every job interview since 2020."
+  },
+  {
+   "label": "general",
+   "text": "I reheat coffee in the microwave four times before finally drinking it cold."
+  },
+  {
+   "label": "general",
+   "text": "I collect reusable tote bags I never remember to bring to the store."
+  },
+  {
+   "label": "general",
+   "text": "I talk to my cat like she is my therapist and she ignores me."
+  },
+  {
+   "label": "general",
+   "text": "I buy concert tickets for bands I only know one song from."
+  },
+  {
+   "label": "general",
+   "text": "My fridge is half expired condiments and half takeout containers."
+  },
+  {
+   "label": "general",
+   "text": "I keep a spare umbrella at work that I have never used."
+  },
+  {
+   "label": "general",
+   "text": "I sing in the shower with the confidence of a Grammy winner."
+  },
+  {
+   "label": "general",
+   "text": "I order food online just to track the delivery map like a soap opera."
+  },
+  {
+   "label": "general",
+   "text": "I own three pairs of nearly identical black jeans."
+  },
+  {
+   "label": "general",
+   "text": "I wave at strangers thinking I know them and keep walking when they wave back."
+  },
+  {
+   "label": "general",
+   "text": "I set five alarms and still wake up ten minutes before my shift."
+  },
+  {
+   "label": "general",
+   "text": "I rehearse conversations in my head that will never happen."
+  },
+  {
+   "label": "general",
+   "text": "I buy books and use them as coasters until I finally read them."
+  },
+  {
+   "label": "general",
+   "text": "I cancel plans to stay home and watch the same sitcom episode again."
+  },
+  {
+   "label": "general",
+   "text": "I answer work emails with 'per my last email' even when I am furious."
+  },
+  {
+   "label": "general",
+   "text": "I leave the lights on in rooms I am not using."
+  },
+  {
+   "label": "general",
+   "text": "I sniff the milk carton every morning even though it is fresh."
+  },
+  {
+   "label": "general",
+   "text": "I put off hanging pictures so my walls look like a moving truck."
+  },
+  {
+   "label": "general",
+   "text": "I wave at dogs on the street and ignore their owners."
+  },
+  {
+   "label": "general",
+   "text": "I save every screenshot thinking I might need it as evidence someday."
+  },
+  {
+   "label": "general",
+   "text": "I microwave popcorn and burn it every single time."
+  },
+  {
+   "label": "general",
+   "text": "I pretend to know wine terms at dinner parties."
+  },
+  {
+   "label": "general",
+   "text": "I keep gym socks with holes because they feel broken in."
+  },
+  {
+   "label": "general",
+   "text": "I check the weather app hourly even when I am not going outside."
+  },
+  {
+   "label": "general",
+   "text": "I own three slow cookers and still order pizza twice a week."
+  },
+  {
+   "label": "general",
+   "text": "My kids taught me how to use the TV remote."
+  },
+  {
+   "label": "general",
+   "text": "I forget my wallet but never my coffee loyalty card."
+  },
+  {
+   "label": "general",
+   "text": "Saturday mornings belong to me, the dog, and stale cereal."
+  },
+  {
+   "label": "general",
+   "text": "I wave at neighbors I cannot name to save my life."
+  },
+  {
+   "label": "general",
+   "text": "Birthday cards sit in my drawer for months unsigned."
+  },
+  {
+   "label": "general",
+   "text": "I hum jingles from commercials while loading the dishwasher."
+  },
+  {
+   "label": "general",
+   "text": "Our family group chat is just memes and grocery lists."
+  },
+  {
+   "label": "general",
+   "text": "I buy fancy olive oil and use it on frozen nuggets."
+  },
+  {
+   "label": "general",
+   "text": "Bedtime stories end with me snoring before the kids do."
+  },
+  {
+   "label": "general",
+   "text": "I replay awkward conversations from 2009 while brushing my teeth."
+  },
+  {
+   "label": "general",
+   "text": "I collect reusable bags but always forget them in the car."
+  },
+  {
+   "label": "general",
+   "text": "My kids think I am good at fixing things until I open the back."
+  },
+  {
+   "label": "general",
+   "text": "I say 'just one minute' and vanish into the pantry."
+  },
+  {
+   "label": "general",
+   "text": "Holiday lights stay up until Valentine's Day every year."
+  },
+  {
+   "label": "general",
+   "text": "I wave at the mail carrier like we are old friends."
+  },
+  {
+   "label": "general",
+   "text": "I know the drive-thru order by heart at three places."
+  },
+  {
+   "label": "general",
+   "text": "Our vacation photos are mostly blurry thumbs and closed eyes."
+  },
+  {
+   "label": "general",
+   "text": "I hide chocolate in the vegetable drawer."
+  },
+  {
+   "label": "general",
+   "text": "My spice rack has five jars of cinnamon and no cumin."
+  },
+  {
+   "label": "general",
+   "text": "I wave at the school crossing guard although I walk alone."
+  },
+  {
+   "label": "general",
+   "text": "I reheat coffee three times before drinking it cold."
+  },
+  {
+   "label": "general",
+   "text": "I buy board games we never finish opening."
+  },
+  {
+   "label": "general",
+   "text": "I keep one sock from every lost pair 'just in case'."
+  },
+  {
+   "label": "general",
+   "text": "I wave at delivery drivers and wait for a wave back."
+  },
+  {
+   "label": "general",
+   "text": "My plants survive because I forget to overwater them."
+  },
+  {
+   "label": "general",
+   "text": "I sing along to children's songs when the house is quiet."
+  },
+  {
+   "label": "general",
+   "text": "I wave at the garbage truck driver every Thursday morning."
+  },
+  {
+   "label": "general",
+   "text": "I talk to my cat like we're co-hosting a podcast."
+  },
+  {
+   "label": "general",
+   "text": "I own five umbrellas and somehow never have one when it rains."
+  },
+  {
+   "label": "general",
+   "text": "Birthday cards stay unwritten until the party is already over."
+  },
+  {
+   "label": "general",
+   "text": "I memorize song lyrics I don't understand and sing them confidently."
+  },
+  {
+   "label": "general",
+   "text": "My fridge contains three identical jars of pickles."
+  },
+  {
+   "label": "general",
+   "text": "I wave at strangers who turn out to be waving at someone behind me."
+  },
+  {
+   "label": "general",
+   "text": "I buy kitchen gadgets I use once and then worship as art."
+  },
+  {
+   "label": "general",
+   "text": "My sock drawer is a mystery zone where pairs go to die."
+  },
+  {
+   "label": "general",
+   "text": "I press the crosswalk button twenty times like it's a video game."
+  },
+  {
+   "label": "general",
+   "text": "I take screenshots of recipes I never plan to cook."
+  },
+  {
+   "label": "general",
+   "text": "I fold laundry only when I run out of clean underwear."
+  },
+  {
+   "label": "general",
+   "text": "I say 'bless you' to my own sneezes in an empty room."
+  },
+  {
+   "label": "general",
+   "text": "I reorganize my spice rack at midnight for no reason."
+  },
+  {
+   "label": "general",
+   "text": "I leave voice memos for myself that I never listen to."
+  },
+  {
+   "label": "general",
+   "text": "I buy the same book twice because I forgot I already own it."
+  },
+  {
+   "label": "general",
+   "text": "My browser has forty tabs open about nothing important."
+  },
+  {
+   "label": "general",
+   "text": "I wear sunglasses indoors just to feel like a detective."
+  },
+  {
+   "label": "general",
+   "text": "I sing to my toaster while waiting for the bread."
+  },
+  {
+   "label": "general",
+   "text": "I keep expired coupons because they feel like memories."
+  },
+  {
+   "label": "general",
+   "text": "I lock myself out and call my roommate to let me back in."
+  },
+  {
+   "label": "general",
+   "text": "I put milk in the cupboard and cereal in the fridge."
+  },
+  {
+   "label": "general",
+   "text": "I name my houseplants after celebrities I will never meet."
+  },
+  {
+   "label": "general",
+   "text": "I practice my grocery store small talk in the car before going inside."
+  },
+  {
+   "label": "general",
+   "text": "I ate two breakfasts because I forgot I already ate one."
+  },
+  {
+   "label": "general",
+   "text": "My flatmate's cat judges me every time I take a nap."
+  },
+  {
+   "label": "general",
+   "text": "I have three umbrellas and I still walk home soaked."
+  },
+  {
+   "label": "general",
+   "text": "The queue for the chip shop is longer than my attention span."
+  },
+  {
+   "label": "general",
+   "text": "I tried cooking for myself and set off the fire alarm again."
+  },
+  {
+   "label": "general",
+   "text": "My laundry pile has developed its own ecosystem and zip code."
+  },
+  {
+   "label": "general",
+   "text": "I spent forty pounds on takeaway instead of buying groceries again."
+  },
+  {
+   "label": "general",
+   "text": "I talk to my houseplants more than I talk to my flatmates."
+  },
+  {
+   "label": "general",
+   "text": "I bought a bread maker I have never actually used once."
+  },
+  {
+   "label": "general",
+   "text": "My music taste changes completely depending on which bus I miss."
+  },
+  {
+   "label": "general",
+   "text": "I keep buying socks but my feet remain perpetually cold."
+  },
+  {
+   "label": "general",
+   "text": "The launderette is the only place I see natural light these days."
+  },
+  {
+   "label": "general",
+   "text": "I named my toaster and now I feel guilty using it."
+  },
+  {
+   "label": "general",
+   "text": "I spend my weekends wandering charity shops looking for nothing."
+  },
+  {
+   "label": "general",
+   "text": "My fridge contains one sad carrot and a jar of pickles."
+  },
+  {
+   "label": "general",
+   "text": "I queue for the laundrette every Tuesday like it is a social event."
+  },
+  {
+   "label": "general",
+   "text": "I once got lost in my own student accommodation for twenty minutes."
+  },
+  {
+   "label": "general",
+   "text": "I collect receipts from places I do not even remember visiting."
+  },
+  {
+   "label": "general",
+   "text": "I hum theme tunes from shows I have never actually watched."
+  },
+  {
+   "label": "general",
+   "text": "My weekly highlight is finding a parking spot right outside the shop."
+  },
+  {
+   "label": "general",
+   "text": "I pretend to know what wine I like but I just drink the cheap stuff."
+  },
+  {
+   "label": "general",
+   "text": "I have a favourite bench in the park and I defend it fiercely."
+  },
+  {
+   "label": "general",
+   "text": "My water bottle travels everywhere with me but stays empty."
+  },
+  {
+   "label": "general",
+   "text": "I reheat tea in the microwave until it tastes like regret."
+  },
+  {
+   "label": "general",
+   "text": "I try new tea flavours and hate almost every single one."
+  },
+  {
+   "label": "general",
+   "text": "I keep a spare umbrella in my bag and forget it is there."
+  },
+  {
+   "label": "general",
+   "text": "I buy the same sandwich every day and call it variety."
+  },
+  {
+   "label": "general",
+   "text": "I waved at a stranger for ten seconds before realising they were not my friend."
+  },
+  {
+   "label": "general",
+   "text": "I watch cooking shows at midnight while eating plain toast."
+  },
+  {
+   "label": "general",
+   "text": "I get excited when the bin collection day finally arrives."
+  },
+  {
+   "label": "general",
+   "text": "I cry during dog food commercials but never sad movies."
+  },
+  {
+   "label": "general",
+   "text": "My houseplants survive because they are fake."
+  },
+  {
+   "label": "general",
+   "text": "I still do not know how to fold a fitted sheet."
+  },
+  {
+   "label": "general",
+   "text": "I talk to my cat like he pays rent."
+  },
+  {
+   "label": "general",
+   "text": "I buy books and stack them unread like art."
+  },
+  {
+   "label": "general",
+   "text": "Burnt toast is my signature breakfast move."
+  },
+  {
+   "label": "general",
+   "text": "My fridge is half condiments and half mystery."
+  },
+  {
+   "label": "general",
+   "text": "I always forget where I parked the car."
+  },
+  {
+   "label": "general",
+   "text": "I reheat pizza for three days straight."
+  },
+  {
+   "label": "general",
+   "text": "I wave at strangers thinking I know them."
+  },
+  {
+   "label": "general",
+   "text": "I buy concert tickets then worry about crowds."
+  },
+  {
+   "label": "general",
+   "text": "I mismatched socks on purpose every laundry day."
+  },
+  {
+   "label": "general",
+   "text": "My Spotify playlists have themes no one understands."
+  },
+  {
+   "label": "general",
+   "text": "I google random facts at 2am for fun."
+  },
+  {
+   "label": "general",
+   "text": "I say bless you to sneezing mannequins."
+  },
+  {
+   "label": "general",
+   "text": "I fold pizza crusts into tiny sculptures."
+  },
+  {
+   "label": "general",
+   "text": "I lose my keys inside my own pocket."
+  },
+  {
+   "label": "general",
+   "text": "I tip baristas extra when I feel awkward."
+  },
+  {
+   "label": "general",
+   "text": "I rehearse conversations in the mirror alone."
+  },
+  {
+   "label": "general",
+   "text": "I own three umbrellas and lose them all."
+  },
+  {
+   "label": "general",
+   "text": "I eat cereal for dinner without shame."
+  },
+  {
+   "label": "general",
+   "text": "I wave back at people waving behind me."
+  },
+  {
+   "label": "general",
+   "text": "I name my houseplants after exes jokingly."
+  },
+  {
+   "label": "general",
+   "text": "I microwave socks when my feet feel cold."
+  },
+  {
+   "label": "general",
+   "text": "I buy snacks at the checkout I never wanted."
+  },
+  {
+   "label": "general",
+   "text": "I hum songs I only half-remember the words to."
+  },
+  {
+   "label": "student_life",
+   "text": "I write my essays at 3am with a lukewarm coffee."
+  },
+  {
+   "label": "student_life",
+   "text": "My hall neighbours hear me sobbing over a deadline."
+  },
+  {
+   "label": "student_life",
+   "text": "Lecture recordings play while I stare at the ceiling."
+  },
+  {
+   "label": "student_life",
+   "text": "Library lockdown until the dissertation is done."
+  },
+  {
+   "label": "student_life",
+   "text": "I opened Word six times today and wrote nothing."
+  },
+  {
+   "label": "student_life",
+   "text": "Seminar panic hits when nobody else speaks first."
+  },
+  {
+   "label": "student_life",
+   "text": "My bibliography is longer than my actual argument."
+  },
+  {
+   "label": "student_life",
+   "text": "I paid ninety pounds for a textbook I never opened."
+  },
+  {
+   "label": "student_life",
+   "text": "Deadlines sneak up while I reorganise my desk."
+  },
+  {
+   "label": "student_life",
+   "text": "Flashcards cover my bedroom wall like strange art."
+  },
+  {
+   "label": "student_life",
+   "text": "The professor mentioned reading week and I forgot it existed."
+  },
+  {
+   "label": "student_life",
+   "text": "I submitted two minutes before midnight and celebrated."
+  },
+  {
+   "label": "student_life",
+   "text": "All-nighters in the study room are my only social life."
+  },
+  {
+   "label": "student_life",
+   "text": "Referencing styles make me question every life choice."
+  },
+  {
+   "label": "student_life",
+   "text": "I highlight entire pages hoping information will sink in."
+  },
+  {
+   "label": "student_life",
+   "text": "My student email has unread messages from October."
+  },
+  {
+   "label": "student_life",
+   "text": "Tutorial prep means panic-reading the abstract ten minutes before."
+  },
+  {
+   "label": "student_life",
+   "text": "I live off meal deals during exam season."
+  },
+  {
+   "label": "student_life",
+   "text": "The lab report took longer than the actual experiment."
+  },
+  {
+   "label": "student_life",
+   "text": "I have three group chats and still missed the room change."
+  },
+  {
+   "label": "student_life",
+   "text": "Revision notes are colour-coded but completely useless."
+  },
+  {
+   "label": "student_life",
+   "text": "Turnitin anxiety keeps me awake at night."
+  },
+  {
+   "label": "student_life",
+   "text": "I rewrote my introduction seven times in one hour."
+  },
+  {
+   "label": "student_life",
+   "text": "Campus Wi-Fi died right as I hit submit."
+  },
+  {
+   "label": "student_life",
+   "text": "My degree feels like a very expensive guessing game."
+  },
+  {
+   "label": "student_life",
+   "text": "I attend lectures solely for the participation marks."
+  },
+  {
+   "label": "student_life",
+   "text": "Harvard referencing is my personal arch-nemesis."
+  },
+  {
+   "label": "student_life",
+   "text": "I checked the marking rubric more than the feedback."
+  },
+  {
+   "label": "student_life",
+   "text": "Exam hall silence is louder than any party."
+  },
+  {
+   "label": "student_life",
+   "text": "My roommate knows my essay draft better than I do."
+  },
+  {
+   "label": "student_life",
+   "text": "I know every available seat in the library by heart."
+  },
+  {
+   "label": "student_life",
+   "text": "My lecture notes live in a graveyard of abandoned Word docs."
+  },
+  {
+   "label": "student_life",
+   "text": "I’ve read every syllabus but attended zero actual classes."
+  },
+  {
+   "label": "student_life",
+   "text": "Caffeine is the only thing keeping my GPA above water."
+  },
+  {
+   "label": "student_life",
+   "text": "I rewrite my to-do list instead of doing the work itself."
+  },
+  {
+   "label": "student_life",
+   "text": "The due date is my only real alarm clock."
+  },
+  {
+   "label": "student_life",
+   "text": "I’ve mastered the art of looking busy while accomplishing nothing."
+  },
+  {
+   "label": "student_life",
+   "text": "I color-code everything but never actually study the material."
+  },
+  {
+   "label": "student_life",
+   "text": "Office hours? I’d rather guess the assignment requirements."
+  },
+  {
+   "label": "student_life",
+   "text": "My backpack contains three notebooks for one class."
+  },
+  {
+   "label": "student_life",
+   "text": "I highlight the entire textbook hoping knowledge will seep in."
+  },
+  {
+   "label": "student_life",
+   "text": "Group projects are my personal nightmare on loop."
+  },
+  {
+   "label": "student_life",
+   "text": "I can procrastinate on a ten-page essay for three weeks straight."
+  },
+  {
+   "label": "student_life",
+   "text": "Flashcards sit untouched while I reorganize my desk for hours."
+  },
+  {
+   "label": "student_life",
+   "text": "I attend class solely to copy someone else’s notes."
+  },
+  {
+   "label": "student_life",
+   "text": "The campus coffee shop knows my order better than my advisor."
+  },
+  {
+   "label": "student_life",
+   "text": "I treat every exam like a surprise pop quiz I forgot about."
+  },
+  {
+   "label": "student_life",
+   "text": "My study playlist lasts longer than my actual focus span."
+  },
+  {
+   "label": "student_life",
+   "text": "I’ve cited Wikipedia in more papers than I’d like to admit."
+  },
+  {
+   "label": "student_life",
+   "text": "Dining hall food fuels my all-nighters more than sleep does."
+  },
+  {
+   "label": "student_life",
+   "text": "I sign up for clubs but skip every single meeting."
+  },
+  {
+   "label": "student_life",
+   "text": "My desk is buried under printed articles I’ll never read."
+  },
+  {
+   "label": "student_life",
+   "text": "I pull all-nighters for assignments I started the morning they’re due."
+  },
+  {
+   "label": "student_life",
+   "text": "The professor recognizes my face but not my name."
+  },
+  {
+   "label": "student_life",
+   "text": "I treat the syllabus like a suggestive menu rather than a contract."
+  },
+  {
+   "label": "student_life",
+   "text": "My grades are a rollercoaster I never booked a ticket for."
+  },
+  {
+   "label": "student_life",
+   "text": "I highlight PDFs on my laptop while watching YouTube in another tab."
+  },
+  {
+   "label": "student_life",
+   "text": "My academic planner is a work of fiction."
+  },
+  {
+   "label": "student_life",
+   "text": "I ask for extensions like it’s a personality trait."
+  },
+  {
+   "label": "gaming",
+   "text": "Yaar, rank stuck in Silver because I queue with potato teammates."
+  },
+  {
+   "label": "gaming",
+   "text": "I yell at ping spikes like they betrayed my entire bloodline."
+  },
+  {
+   "label": "gaming",
+   "text": "Three a.m. ranked grind, morning lab absolutely destroyed."
+  },
+  {
+   "label": "gaming",
+   "text": "PC sounds like a jet engine every time I load Cyberpunk."
+  },
+  {
+   "label": "gaming",
+   "text": "Discord squad calls me whenever my screen freezes mid-clutch."
+  },
+  {
+   "label": "gaming",
+   "text": "Gacha pity broke my wallet and my dad's peace."
+  },
+  {
+   "label": "gaming",
+   "text": "Speedrun practice made me miss three submission deadlines."
+  },
+  {
+   "label": "gaming",
+   "text": "Console update started at midnight, still updating at dawn."
+  },
+  {
+   "label": "gaming",
+   "text": "I bought skins I will never use because FOMO hit hard."
+  },
+  {
+   "label": "gaming",
+   "text": "Controller drift turns every race into a demolition derby."
+  },
+  {
+   "label": "gaming",
+   "text": "Lag cost me the ace, now my KDA weeps silently."
+  },
+  {
+   "label": "gaming",
+   "text": "Streaming to zero viewers while my roommate judges my build."
+  },
+  {
+   "label": "gaming",
+   "text": "GPU temperature hotter than Delhi summer, framerate colder than Shimla."
+  },
+  {
+   "label": "gaming",
+   "text": "I rage-quit solo queue and blamed the net provider out loud."
+  },
+  {
+   "label": "gaming",
+   "text": "Game characters know my secrets better than my hostel warden."
+  },
+  {
+   "label": "gaming",
+   "text": "Pre-ordered a broken game at launch like a certified masochist."
+  },
+  {
+   "label": "gaming",
+   "text": "My steam library has fifty titles, I play only two."
+  },
+  {
+   "label": "gaming",
+   "text": "Crosshair placement is poetry, my aim is tragic prose."
+  },
+  {
+   "label": "gaming",
+   "text": "Diwali bonus went straight into a battle pass I finished in a week."
+  },
+  {
+   "label": "gaming",
+   "text": "LAN party lasted till sunrise, engineering notes turned to dust."
+  },
+  {
+   "label": "gaming",
+   "text": "I camp spawn points because fair fights scare me."
+  },
+  {
+   "label": "gaming",
+   "text": "Headset mic picks up my hostel mate's snoring during finals."
+  },
+  {
+   "label": "gaming",
+   "text": "Digital deluxe edition bought on impulse, refund request ignored."
+  },
+  {
+   "label": "gaming",
+   "text": "Ping two hundred, still insisted on playing competitive matches."
+  },
+  {
+   "label": "gaming",
+   "text": "Rerolled accounts five times chasing a starter SSR character."
+  },
+  {
+   "label": "gaming",
+   "text": "My laptop fan sounds like it is applying for takeoff."
+  },
+  {
+   "label": "gaming",
+   "text": "Custom lobby with friends always ends in friendly fire betrayal."
+  },
+  {
+   "label": "gaming",
+   "text": "I know every combo but cannot code a single for-loop."
+  },
+  {
+   "label": "gaming",
+   "text": "Game night means skipping dinner and ignoring three group chat messages."
+  },
+  {
+   "label": "gaming",
+   "text": "Skin gambling sites tempted me, but my savings said no."
+  },
+  {
+   "label": "gaming",
+   "text": "I spend every evening grinding ranked matches until my eyes burn."
+  },
+  {
+   "label": "gaming",
+   "text": "My Discord squad knows I never answer calls during raid night."
+  },
+  {
+   "label": "gaming",
+   "text": "I checked my ping three times before losing the fight."
+  },
+  {
+   "label": "gaming",
+   "text": "Waiting for a gacha banner is my current full-time hobby."
+  },
+  {
+   "label": "gaming",
+   "text": "I built a custom PC with RGB fans that blind my cat."
+  },
+  {
+   "label": "gaming",
+   "text": "Speedrun attempts took over my entire weekend again."
+  },
+  {
+   "label": "gaming",
+   "text": "I main the support role and carry teams through bad decisions."
+  },
+  {
+   "label": "gaming",
+   "text": "My Steam library has ninety games I never touched."
+  },
+  {
+   "label": "gaming",
+   "text": "Losing a lane makes me rage-quit and scream into a pillow."
+  },
+  {
+   "label": "gaming",
+   "text": "I bought three new controllers this month for drift issues."
+  },
+  {
+   "label": "gaming",
+   "text": "Twitch streams play in the background while I pretend to work."
+  },
+  {
+   "label": "gaming",
+   "text": "My friends joke that my only personality trait is gaming."
+  },
+  {
+   "label": "gaming",
+   "text": "Preordering deluxe editions is a habit I cannot quit."
+  },
+  {
+   "label": "gaming",
+   "text": "I memorized every combo in the fighting game roster."
+  },
+  {
+   "label": "gaming",
+   "text": "Nightly co-op sessions keep me up until three a.m."
+  },
+  {
+   "label": "gaming",
+   "text": "I chose a game launch over a friend's birthday dinner."
+  },
+  {
+   "label": "gaming",
+   "text": "Camping spawn points is my controversial favorite strategy."
+  },
+  {
+   "label": "gaming",
+   "text": "My gamertag gets reported after every competitive match."
+  },
+  {
+   "label": "gaming",
+   "text": "I spent twenty dollars on skins for a free-to-play game."
+  },
+  {
+   "label": "gaming",
+   "text": "Beta access codes feel like winning the lottery to me."
+  },
+  {
+   "label": "gaming",
+   "text": "I name every save file after old inside jokes."
+  },
+  {
+   "label": "gaming",
+   "text": "Mic checks take longer than the actual tutorial level."
+  },
+  {
+   "label": "gaming",
+   "text": "I reload after every single shot out of habit."
+  },
+  {
+   "label": "gaming",
+   "text": "Leaderboard climbs matter more than my sleep schedule."
+  },
+  {
+   "label": "gaming",
+   "text": "My backlog grows faster than I can ever finish games."
+  },
+  {
+   "label": "gaming",
+   "text": "Nostalgia for cartridge blow-ins hits me randomly."
+  },
+  {
+   "label": "gaming",
+   "text": "I unlock every achievement before touching the story."
+  },
+  {
+   "label": "gaming",
+   "text": "Game soundtracks are my only focus music at work."
+  },
+  {
+   "label": "gaming",
+   "text": "I argue about frame data with strangers online."
+  },
+  {
+   "label": "gaming",
+   "text": "Local multiplayer nights are the only reason I host."
+  },
+  {
+   "label": "gaming",
+   "text": "My student loan went straight into a gacha game and I have nothing to show for it."
+  },
+  {
+   "label": "gaming",
+   "text": "I’ll queue for ranked solo at 3am before I’ll write my essay introduction."
+  },
+  {
+   "label": "gaming",
+   "text": "My Discord squad knows my voice better than my flatmates do."
+  },
+  {
+   "label": "gaming",
+   "text": "I’ve rescheduled three doctor’s appointments because a limited-time event started."
+  },
+  {
+   "label": "gaming",
+   "text": "Speedrunning the same level for six hours felt more productive than attending lectures."
+  },
+  {
+   "label": "gaming",
+   "text": "My mouse has more RGB lights than my entire room combined."
+  },
+  {
+   "label": "gaming",
+   "text": "I told my professor my internet lagged during the seminar while I was actually in a match."
+  },
+  {
+   "label": "gaming",
+   "text": "PC build upgrades cost more than my weekly food shop, and I still can’t cook."
+  },
+  {
+   "label": "gaming",
+   "text": "I know every frame data detail for my main but cannot remember my seminar times."
+  },
+  {
+   "label": "gaming",
+   "text": "Streaming my gameplay to three viewers is my only consistent daily routine."
+  },
+  {
+   "label": "gaming",
+   "text": "I bought a mechanical keyboard for the clicks and now my neighbours complain daily."
+  },
+  {
+   "label": "gaming",
+   "text": "Gacha pulls at midnight are my version of self-care and they always disappoint."
+  },
+  {
+   "label": "gaming",
+   "text": "My Steam library has 200 games and I’ve launched maybe twenty of them."
+  },
+  {
+   "label": "gaming",
+   "text": "I’ll grind for a digital skin but I won’t hoover my room for weeks."
+  },
+  {
+   "label": "gaming",
+   "text": "League of Legends ping spikes ruin my mood more than any bad grade ever could."
+  },
+  {
+   "label": "gaming",
+   "text": "I named my save file after my ex and still haven’t finished the story mode."
+  },
+  {
+   "label": "gaming",
+   "text": "Weekends disappear into speedrun attempts while my laundry pile becomes a mountain."
+  },
+  {
+   "label": "gaming",
+   "text": "Console wars matter more to me than module choices next semester."
+  },
+  {
+   "label": "gaming",
+   "text": "I’ve missed more society meetups than boss raids and I regret neither."
+  },
+  {
+   "label": "gaming",
+   "text": "Microtransactions are my only recurring bill and I pay them without thinking."
+  },
+  {
+   "label": "procrastination",
+   "text": "I keep saying I'll start the laundry tomorrow and it's now a week old."
+  },
+  {
+   "label": "procrastination",
+   "text": "Snoozing my alarm means my breakfast is actually dinner."
+  },
+  {
+   "label": "procrastination",
+   "text": "My unread emails have their own unread emails."
+  },
+  {
+   "label": "procrastination",
+   "text": "I paid the bill three months late and blamed the cat."
+  },
+  {
+   "label": "procrastination",
+   "text": "Still haven't booked that dentist appointment from January."
+  },
+  {
+   "label": "procrastination",
+   "text": "I reorganised my spice rack instead of replying to Mum."
+  },
+  {
+   "label": "procrastination",
+   "text": "The bin has been full since Tuesday but I walk past it."
+  },
+  {
+   "label": "procrastination",
+   "text": "I’ll start meal prep on Monday, which keeps moving."
+  },
+  {
+   "label": "procrastination",
+   "text": "My to-do list lives in my notes app and never sees daylight."
+  },
+  {
+   "label": "procrastination",
+   "text": "I hoarded loyalty points for a year before using them."
+  },
+  {
+   "label": "procrastination",
+   "text": "I washed one sock and called it doing laundry."
+  },
+  {
+   "label": "procrastination",
+   "text": "I scheduled a GP call and cancelled it five times."
+  },
+  {
+   "label": "procrastination",
+   "text": "The hoover has become a permanent hallway ornament."
+  },
+  {
+   "label": "procrastination",
+   "text": "I’ve been meaning to return that library book since fresher’s week."
+  },
+  {
+   "label": "procrastination",
+   "text": "I deep-cleaned my desk instead of booking the train home."
+  },
+  {
+   "label": "procrastination",
+   "text": "My fridge is a science experiment because I never take the bins out."
+  },
+  {
+   "label": "procrastination",
+   "text": "I’ll sort my bank statements when I’m less busy, said every month."
+  },
+  {
+   "label": "procrastination",
+   "text": "I watched a 40-minute video on folding sheets but haven’t folded any."
+  },
+  {
+   "label": "procrastination",
+   "text": "The parcel has sat in the hallway since September."
+  },
+  {
+   "label": "procrastination",
+   "text": "I keep booking haircuts and forgetting until they close."
+  },
+  {
+   "label": "procrastination",
+   "text": "I filed my tax return on the deadline at 11:59pm."
+  },
+  {
+   "label": "procrastination",
+   "text": "I bought a planner to track chores and never opened it."
+  },
+  {
+   "label": "procrastination",
+   "text": "I’ll reply to that group chat when I have more energy, said in 2022."
+  },
+  {
+   "label": "procrastination",
+   "text": "I booked a doctor’s appointment then ghosted the clinic."
+  },
+  {
+   "label": "procrastination",
+   "text": "My recycling pile is taller than my bedside lamp."
+  },
+  {
+   "label": "procrastination",
+   "text": "I’ll shower after I finish this episode, three seasons later."
+  },
+  {
+   "label": "procrastination",
+   "text": "I hoarded expired yoghurts because I couldn’t face the bin walk."
+  },
+  {
+   "label": "procrastination",
+   "text": "I set five reminders to buy milk and still drank black tea."
+  },
+  {
+   "label": "procrastination",
+   "text": "I deep-cleaned the entire kitchen to avoid calling my landlord."
+  },
+  {
+   "label": "procrastination",
+   "text": "I keep saying I’ll sort my wardrobe next weekend."
+  }
+ ]
+}
