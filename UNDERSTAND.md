@@ -81,8 +81,10 @@ backend/
 │       ├── ai_provider.py           # NVIDIA + Gemini AI calls
 │       └── history_store.py         # MongoDB ya memory me history
 └── training/
-    ├── dataset.json         # Training examples (chhota, hath se likha)
-    └── train_model.py       # Model train karke .joblib file banata hai
+    ├── generated_examples.json  # ~1100 NVIDIA ke likhe examples (model inse seekhta hai)
+    ├── dataset.json         # 150 haath se likhe examples (sirf TEST, model inse nahi seekhta)
+    ├── generate_examples.py # NVIDIA se naye examples likhwata hai
+    └── train_model.py       # Model train + test karke .joblib file banata hai
 ```
 
 ### 3.1 `main.py` – Server ka darwaza
@@ -135,10 +137,11 @@ def build_pipeline():
         ("chars", TfidfVectorizer(analyzer="char_wb", ngram_range=(3, 5))),
     ])
     # Logistic Regression = har category ki probability nikalta hai
-    return Pipeline([("features", features), ("classifier", LogisticRegression(C=4.0))])
+    return Pipeline([("features", features), ("classifier", LogisticRegression(C=16.0))])
 
-# 5-fold cross validation = model ko 5 baar alag-alag data pe test karo (imaandaar accuracy)
-scores = cross_val_score(build_pipeline(), texts, labels, cv=folds)
+pipeline.fit(generated_texts, generated_labels)            # NVIDIA ke likhe ~1100 examples se seekho
+predictions = pipeline.predict(handwritten_texts)         # 150 haath se likhe (kabhi nahi dekhe) pe test
+test_accuracy = accuracy_score(handwritten_labels, predictions)   # imaandaar accuracy
 joblib.dump(bundle, "app/ml/models/roast_category.joblib")   # model file save
 ```
 
@@ -157,7 +160,9 @@ def predict(self, text):
     }
 ```
 
-**Imaandaari wali baat:** dataset chhota hai (150 examples), accuracy ~49% (topics). Model sirf words pehchanta hai, insaan ki personality nahi. Isliye UI me confidence dikhate hain aur kam confidence pe "General" pe fallback karte hain.
+**Data kahan se aaya?** Pehle sirf 150 haath se likhe examples the (har topic ke 30) aur accuracy ~49% thi. Ab `generate_examples.py` NVIDIA Nemotron se 8 alag "personas" (Indian student, office worker, parent...) ke andaaz me ~1100 lines likhwata hai, ek hi tie-break rulebook ke saath (jaise: exam/class wali line hamesha student_life, chahe usme der karna ho). Duplicate aur test set se milti-julti lines hata di jaati hain.
+
+**Imaandaar test:** model sirf generated data se seekhta hai, aur 150 haath se likhe examples pe test hota hai jo usne kabhi nahi dekhe. Result: **78.7%** (gaming 97%, student life 93%, general 80%, productivity 70%, procrastination 53%). Procrastination kamzor hai kyunki model words match karta hai, matlab nahi samajhta ("snooze" wali line general lagti hai). Isliye UI me confidence dikhate hain aur kam confidence pe "General" pe fallback karte hain.
 
 Model **sirf topic batata hai**. Joke wo nahi likhta. Joke alag system likhta hai (next section).
 
@@ -577,7 +582,7 @@ Isliye Camera tab ke liye **development build** chahiye: `npm run build:android`
 |---|---|
 | Naye roast jokes | `backend/app/services/roast_templates.py` |
 | Camera roast jokes | `backend/app/services/camera_roast_service.py` |
-| ML ko better banana | `backend/training/dataset.json` me examples add → `python training/train_model.py` |
+| ML ko better banana | `python training/generate_examples.py` (naya data) → `python training/train_model.py` (test accuracy print hoti hai) |
 | Confidence threshold (40%) | `backend/app/ml/classifier.py` (last lines) |
 | Naya API endpoint | `routes/features.py` + `schemas/api.py` + `services/` me logic |
 | Website colors / font | `web/src/index.css` (`@theme`) |

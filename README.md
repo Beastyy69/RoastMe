@@ -96,10 +96,12 @@ API keys stay on the server and are never sent to the website or app. If every A
 
 ## ML details and limitations
 
-- The dataset (`backend/training/dataset.json`) is small and hand-written for illustration: 150 roast-topic examples. It is **not** real user data.
-- 5-fold cross-validated accuracy from the last training run: about **49%** for topics (chance is 20%). That's modest, so expect mistakes.
-- The model matches vocabulary. It does not understand personality and cannot measure how "roastable" anyone is.
-- To improve it, add examples to `dataset.json` and re-run `python training/train_model.py`.
+- **Training data:** `backend/training/generated_examples.json`, 1,134 lines written by NVIDIA Nemotron with `training/generate_examples.py` (8 writer personas per topic, one shared set of tie-break rules). It is AI-written, **not** real user data.
+- **Test data:** `backend/training/dataset.json`, 150 hand-written lines (30 per topic). The model never trains on them. Generated lines too similar to them were removed, so the test can't leak.
+- **Accuracy on that test set: 78.7%** (chance is 20%). By topic: gaming 97%, student life 93%, general 80%, productivity 70%, procrastination 53%. The earlier model, trained on the 150 hand-written lines alone, scored about 49% in cross-validation.
+- Procrastination is the weak spot: lines like "I set ten alarms and snooze all of them" get mistaken for general life, because the model matches words, not meaning.
+- It only predicts the roast **topic**. It does not write jokes, does not understand personality and cannot measure how "roastable" anyone is.
+- To change the data: run `python training/generate_examples.py` (needs `NVIDIA_API_KEY`), then `python training/train_model.py`. The training script prints the test accuracy every time.
 
 ## Deployment
 
