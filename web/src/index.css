@@ -1,0 +1,55 @@
+/*
+ * Global styles: Tailwind CSS import + hamare theme colors + font.
+ * Tailwind classes (jaise bg-violet-600) seedha JSX me likhi jaati hain.
+ */
+@import "tailwindcss"; /* Tailwind CSS ki saari classes load karo */
+
+/* Apne custom colors/font; ab bg-surface, bg-ink jaise classes ban jaati hain */
+@theme { /* Tailwind theme me naye tokens */
+  --font-sans: "Inter", ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif; /* default font Inter */
+  --color-ink: #0a0a0b; /* page ka background (lagbhag kaala) */
+  --color-surface: #111113; /* card ka background */
+  --color-surface-2: #17171a; /* modal ka background (thoda halka) */
+} /* theme band */
+
+html { /* poora document */
+  color-scheme: dark; /* browser ke scrollbar/inputs bhi dark */
+  scroll-behavior: smooth; /* link se scroll smooth */
+} /* html band */
+
+body { /* page ka body */
+  margin: 0; /* browser ka default margin hatao */
+  background: var(--color-ink); /* dark background */
+  color: #f4f4f5; /* default text halka white */
+  font-family: var(--font-sans); /* Inter font */
+  -webkit-font-smoothing: antialiased; /* Mac/Chrome pe text smooth */
+  -moz-osx-font-smoothing: grayscale; /* Firefox Mac pe text smooth */
+} /* body band */
+
+::selection { /* text select karne pe */
+  background: rgb(139 92 246 / 0.45); /* violet highlight */
+} /* selection band */
+
+/* Saare inputs/textarea ka ek jaisa look (class="field") */
+.field { /* Field component ye class lagata hai */
+  /* rounded box, halka border, padding, focus pe violet ring */
+  @apply w-full rounded-xl border border-white/10 bg-white/[0.03] px-4 py-3 text-[15px] text-zinc-100 placeholder:text-zinc-500 outline-none transition focus:border-violet-400/60 focus:bg-white/[0.05] focus:ring-4 focus:ring-violet-500/15;
+} /* field band */
+
+/* Loading ke waqt chamakti hui grey patti (shimmer effect) */
+.skeleton { /* LoadingCard ki lines */
+  background: linear-gradient(90deg, rgb(255 255 255 / 0.04) 25%, rgb(255 255 255 / 0.09) 50%, rgb(255 255 255 / 0.04) 75%); /* beech me halki chamak */
+  background-size: 200% 100%; /* gradient ko double chauda karo taaki khiska sake */
+  animation: shimmer 1.6s ease-in-out infinite; /* lagatar chamak chalao */
+} /* skeleton band */
+
+@keyframes shimmer { /* chamak ka animation */
+  from { background-position: 200% 0; } /* right se shuru */
+  to { background-position: -200% 0; } /* left tak */
+} /* keyframes band */
+
+/* "Kam animation" setting on ho to shimmer band */
+@media (prefers-reduced-motion: reduce) { /* user ki OS setting */
+  html { scroll-behavior: auto; } /* smooth scroll band */
+  .skeleton { animation: none; } /* chamak band */
+} /* media band */
