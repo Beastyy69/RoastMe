@@ -38,7 +38,7 @@ class TextClassifier:  # ek model sambhalne wali class
     def available(self):  # model load hua ya nahi
         return self.bundle is not None  # bundle hai to True
 
-    # /health endpoint ke liye model ki details (accuracy, kitne examples)
+    # /health endpoint ke liye model ki details (test accuracy, kitne examples)
     def info(self):  # model ki details
         if not self.available:  # model nahi hai?
             return {"name": self.model_name, "loaded": False}  # sirf naam + not loaded
@@ -46,7 +46,8 @@ class TextClassifier:  # ek model sambhalne wali class
             "name": self.model_name,  # model ka naam
             "loaded": True,  # load ho gaya
             "labels": self.bundle["labels"],  # saari categories
-            "cv_accuracy": self.bundle["cv_accuracy"],  # test accuracy
+            "test_accuracy": self.bundle.get("test_accuracy"),  # haath se likhe test set pe accuracy
+            "test_examples": self.bundle.get("test_examples"),  # test me kitne examples
             "training_examples": self.bundle["training_examples"],  # kitne examples se seekha
             "trained_at": self.bundle["trained_at"],  # kab train hua
         }  # band

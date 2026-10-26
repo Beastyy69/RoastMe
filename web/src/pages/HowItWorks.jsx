@@ -24,7 +24,7 @@ const PARTS = [ // { icon, title, text }
   { // card 3
     icon: Gauge, // meter icon
     title: "3. Fun scores (formulas)", // title
-    text: "Heat rating, believability and NPC score are simple, transparent formulas for entertainment. They are not predictions and they don't measure anything real about you.", // text
+    text: "Heat rating, camera roast score and NPC score are simple, transparent formulas for entertainment. They are not predictions and they don't measure anything real about you.", // text
   }, // card 3 band
   { // card 4
     icon: ShieldCheck, // shield icon
@@ -35,8 +35,9 @@ const PARTS = [ // { icon, title, text }
 
 // Model ki kamiyan (honest disclosure)
 const LIMITATIONS = [ // har kami ek line
-  "The training data is a small, hand-written illustrative dataset (about 150 roast examples), not real user data.", // data chhota hai
-  "Cross-validated accuracy is modest. Expect mistakes, especially for short or mixed-topic text.", // accuracy kam hai
+  "The model learns from about 1,100 example lines written by an AI (NVIDIA Nemotron), not real user data.", // data AI ka likha hai
+  "It is tested on 150 separate hand-written lines it never trained on, and gets about 79% right. Procrastination is its weakest topic (about half right).", // asli test ka number
+  "Expect mistakes, especially for short or mixed-topic text.", // galtiyan hongi
   "The model only knows vocabulary. It doesn't understand you, your personality or how \"roastable\" you are.", // sirf words samajhta hai
 ]; // list band
 
@@ -141,7 +142,7 @@ export default function HowItWorks() { // component shuru
                       // details line
                       <p className="mt-1.5 text-zinc-500">
                         {/* examples, labels, accuracy */}
-                        {model.training_examples} examples · {model.labels.length} labels · 5-fold CV accuracy <span className="tabular-nums text-zinc-300">{Math.round(model.cv_accuracy * 100)}%</span>
+                        {model.training_examples} training examples · {model.labels.length} labels · accuracy on {model.test_examples} unseen hand-written lines <span className="tabular-nums text-zinc-300">{Math.round(model.test_accuracy * 100)}%</span>
                         {/* p band */}
                       </p>
                       // condition band
