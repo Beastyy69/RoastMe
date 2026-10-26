@@ -1,0 +1,605 @@
+{
+  "_about": "Small, hand-written illustrative dataset for RoastMe AI. It is NOT collected from real users and is far too small to represent real people. It only teaches the classifier rough topic vocabulary. See README > ML limitations.",
+  "roast_categories": [
+    {
+      "label": "procrastination",
+      "text": "I always start my work at 11pm the night before the deadline"
+    },
+    {
+      "label": "procrastination",
+      "text": "I will do it tomorrow, I say that every single day"
+    },
+    {
+      "label": "procrastination",
+      "text": "I reorganized my desk three times instead of starting the report"
+    },
+    {
+      "label": "procrastination",
+      "text": "I watch one more video before starting and then it is 3am"
+    },
+    {
+      "label": "procrastination",
+      "text": "my to do list has items from last year still unchecked"
+    },
+    {
+      "label": "procrastination",
+      "text": "I wait until the last minute because I work better under pressure"
+    },
+    {
+      "label": "procrastination",
+      "text": "I postpone everything, even postponing"
+    },
+    {
+      "label": "procrastination",
+      "text": "I open the document, stare at it, then close it and check my phone"
+    },
+    {
+      "label": "procrastination",
+      "text": "I set ten alarms and snooze all of them"
+    },
+    {
+      "label": "procrastination",
+      "text": "I clean my entire room when I should be working on my project"
+    },
+    {
+      "label": "procrastination",
+      "text": "I keep delaying replying to emails for weeks"
+    },
+    {
+      "label": "procrastination",
+      "text": "deadline is in an hour and I just started"
+    },
+    {
+      "label": "procrastination",
+      "text": "I plan to start fresh on Monday every week"
+    },
+    {
+      "label": "procrastination",
+      "text": "I scroll social media for hours before doing anything"
+    },
+    {
+      "label": "procrastination",
+      "text": "I say five more minutes and lose the whole afternoon"
+    },
+    {
+      "label": "procrastination",
+      "text": "I have twenty tabs open about how to stop procrastinating"
+    },
+    {
+      "label": "procrastination",
+      "text": "I leave chores until the weekend and then leave them again"
+    },
+    {
+      "label": "procrastination",
+      "text": "I need the perfect mood before I can start working"
+    },
+    {
+      "label": "procrastination",
+      "text": "I kept pushing the dentist appointment for a year"
+    },
+    {
+      "label": "procrastination",
+      "text": "I make a schedule and then ignore the schedule"
+    },
+    {
+      "label": "procrastination",
+      "text": "I put things off and then panic at midnight"
+    },
+    {
+      "label": "procrastination",
+      "text": "I will start the gym next month, I said that in january"
+    },
+    {
+      "label": "procrastination",
+      "text": "I delay tasks until they become emergencies"
+    },
+    {
+      "label": "procrastination",
+      "text": "my motivation only shows up after the deadline passes"
+    },
+    {
+      "label": "procrastination",
+      "text": "I nap before starting work so I have energy, then nap again"
+    },
+    {
+      "label": "procrastination",
+      "text": "I wait for inspiration that never comes"
+    },
+    {
+      "label": "procrastination",
+      "text": "I bookmark productivity tips and never read them later"
+    },
+    {
+      "label": "procrastination",
+      "text": "I have unopened mail from three months ago"
+    },
+    {
+      "label": "procrastination",
+      "text": "I start every task at the last possible second"
+    },
+    {
+      "label": "procrastination",
+      "text": "I tell everyone I am almost done when I have not started"
+    },
+    {
+      "label": "student_life",
+      "text": "I am a college student who lives on instant noodles and coffee"
+    },
+    {
+      "label": "student_life",
+      "text": "I skip morning lectures and copy notes from friends"
+    },
+    {
+      "label": "student_life",
+      "text": "I pull all nighters before every exam"
+    },
+    {
+      "label": "student_life",
+      "text": "my assignments are due tomorrow and I have not read the syllabus"
+    },
+    {
+      "label": "student_life",
+      "text": "I study only during exam week and pray the rest of the semester"
+    },
+    {
+      "label": "student_life",
+      "text": "I highlight the entire textbook so everything is important"
+    },
+    {
+      "label": "student_life",
+      "text": "I join group projects and let others do the work"
+    },
+    {
+      "label": "student_life",
+      "text": "my hostel room is a mess and I eat in the canteen every day"
+    },
+    {
+      "label": "student_life",
+      "text": "I ask the professor for extensions every week"
+    },
+    {
+      "label": "student_life",
+      "text": "I attend online classes with the camera off from bed"
+    },
+    {
+      "label": "student_life",
+      "text": "my GPA is held together by group assignments"
+    },
+    {
+      "label": "student_life",
+      "text": "I spend my student loan on snacks and concert tickets"
+    },
+    {
+      "label": "student_life",
+      "text": "I fall asleep in the library pretending to study"
+    },
+    {
+      "label": "student_life",
+      "text": "I cram the whole semester in one night before the final"
+    },
+    {
+      "label": "student_life",
+      "text": "I say I am going to the library but I go to the cafe"
+    },
+    {
+      "label": "student_life",
+      "text": "I am in my third year and still lost on campus"
+    },
+    {
+      "label": "student_life",
+      "text": "I submit assignments at 11 59 pm every time"
+    },
+    {
+      "label": "student_life",
+      "text": "my roommate wakes me up for class every morning"
+    },
+    {
+      "label": "student_life",
+      "text": "I bought all the textbooks and never opened them"
+    },
+    {
+      "label": "student_life",
+      "text": "I have a lab report due and I am watching lecture recordings at 2x speed"
+    },
+    {
+      "label": "student_life",
+      "text": "I live on campus and survive on free pizza from club events"
+    },
+    {
+      "label": "student_life",
+      "text": "I change my major every semester"
+    },
+    {
+      "label": "student_life",
+      "text": "I study engineering but my real skill is bunking classes"
+    },
+    {
+      "label": "student_life",
+      "text": "my exam preparation is watching motivational videos"
+    },
+    {
+      "label": "student_life",
+      "text": "I write my thesis only when my supervisor emails me"
+    },
+    {
+      "label": "student_life",
+      "text": "I ask chat tools to explain the homework five minutes before class"
+    },
+    {
+      "label": "student_life",
+      "text": "attendance is low and the semester is almost over"
+    },
+    {
+      "label": "student_life",
+      "text": "I have a quiz today and I just found out"
+    },
+    {
+      "label": "student_life",
+      "text": "my backpack only carries a charger and snacks to college"
+    },
+    {
+      "label": "student_life",
+      "text": "I make beautiful study notes and never revise them"
+    },
+    {
+      "label": "gaming",
+      "text": "I play video games until 4am every night"
+    },
+    {
+      "label": "gaming",
+      "text": "one more match turns into ten more matches"
+    },
+    {
+      "label": "gaming",
+      "text": "I rage quit when I lose and blame lag"
+    },
+    {
+      "label": "gaming",
+      "text": "I spend more money on skins than on food"
+    },
+    {
+      "label": "gaming",
+      "text": "my rank is stuck in silver but I think I am pro"
+    },
+    {
+      "label": "gaming",
+      "text": "I grind the battle pass instead of sleeping"
+    },
+    {
+      "label": "gaming",
+      "text": "I blame my teammates every time we lose the game"
+    },
+    {
+      "label": "gaming",
+      "text": "I stream my gameplay to three viewers including my mom"
+    },
+    {
+      "label": "gaming",
+      "text": "I bought a new gaming chair to improve my aim"
+    },
+    {
+      "label": "gaming",
+      "text": "I play fortnite and valorant all weekend"
+    },
+    {
+      "label": "gaming",
+      "text": "my backlog of unplayed steam games is huge"
+    },
+    {
+      "label": "gaming",
+      "text": "I skip meals to finish a raid with my guild"
+    },
+    {
+      "label": "gaming",
+      "text": "I say gg ez after barely winning"
+    },
+    {
+      "label": "gaming",
+      "text": "I have an RGB setup that costs more than my rent"
+    },
+    {
+      "label": "gaming",
+      "text": "I play mobile games during meetings"
+    },
+    {
+      "label": "gaming",
+      "text": "my controller has more hours than my job"
+    },
+    {
+      "label": "gaming",
+      "text": "I respawn faster than I wake up for work"
+    },
+    {
+      "label": "gaming",
+      "text": "I main the same character for five years"
+    },
+    {
+      "label": "gaming",
+      "text": "I watch other people play games on twitch all day"
+    },
+    {
+      "label": "gaming",
+      "text": "I claim my headset is broken when I miss shots"
+    },
+    {
+      "label": "gaming",
+      "text": "I pre order every game and finish none"
+    },
+    {
+      "label": "gaming",
+      "text": "I play minecraft and build castles instead of homework"
+    },
+    {
+      "label": "gaming",
+      "text": "my ping is my biggest excuse in ranked"
+    },
+    {
+      "label": "gaming",
+      "text": "I lose sleep over loot boxes and gacha pulls"
+    },
+    {
+      "label": "gaming",
+      "text": "I am on discord with my squad every night"
+    },
+    {
+      "label": "gaming",
+      "text": "I speedrun everything except my responsibilities"
+    },
+    {
+      "label": "gaming",
+      "text": "I play call of duty and yell at twelve year olds"
+    },
+    {
+      "label": "gaming",
+      "text": "I check the patch notes more than the news"
+    },
+    {
+      "label": "gaming",
+      "text": "my console is on more than my lights"
+    },
+    {
+      "label": "gaming",
+      "text": "I level up characters but not myself"
+    },
+    {
+      "label": "productivity",
+      "text": "I wake up at 5am and track every hour in notion"
+    },
+    {
+      "label": "productivity",
+      "text": "I have seven productivity apps and use none of them"
+    },
+    {
+      "label": "productivity",
+      "text": "I color code my calendar and plan my week every sunday"
+    },
+    {
+      "label": "productivity",
+      "text": "I read self help books about habits and morning routines"
+    },
+    {
+      "label": "productivity",
+      "text": "I do pomodoro sessions and journal every morning"
+    },
+    {
+      "label": "productivity",
+      "text": "I optimize my workflow more than I actually work"
+    },
+    {
+      "label": "productivity",
+      "text": "I make to do lists for my to do lists"
+    },
+    {
+      "label": "productivity",
+      "text": "I listen to productivity podcasts at 2x speed while working out"
+    },
+    {
+      "label": "productivity",
+      "text": "I bought a standing desk and a fancy planner to be more efficient"
+    },
+    {
+      "label": "productivity",
+      "text": "I have a morning routine with cold showers and meditation"
+    },
+    {
+      "label": "productivity",
+      "text": "I track my habits in a spreadsheet with charts"
+    },
+    {
+      "label": "productivity",
+      "text": "I talk about hustle and grind on linkedin"
+    },
+    {
+      "label": "productivity",
+      "text": "I schedule time blocks for everything including breaks"
+    },
+    {
+      "label": "productivity",
+      "text": "I am always busy in meetings and answering slack"
+    },
+    {
+      "label": "productivity",
+      "text": "I set quarterly goals and OKRs for my personal life"
+    },
+    {
+      "label": "productivity",
+      "text": "I build a second brain and a zettelkasten for notes"
+    },
+    {
+      "label": "productivity",
+      "text": "I answer work emails at midnight"
+    },
+    {
+      "label": "productivity",
+      "text": "I work from home and multitask on three monitors"
+    },
+    {
+      "label": "productivity",
+      "text": "I tried every task manager app on the market"
+    },
+    {
+      "label": "productivity",
+      "text": "my keyboard shortcuts are faster than my thinking"
+    },
+    {
+      "label": "productivity",
+      "text": "I measure my sleep score and my focus score"
+    },
+    {
+      "label": "productivity",
+      "text": "I have a side hustle and a startup idea every week"
+    },
+    {
+      "label": "productivity",
+      "text": "I drink four coffees to stay efficient at work"
+    },
+    {
+      "label": "productivity",
+      "text": "I wake up early to read and plan goals"
+    },
+    {
+      "label": "productivity",
+      "text": "I spend hours setting up the perfect workspace"
+    },
+    {
+      "label": "productivity",
+      "text": "I use kanban boards for groceries"
+    },
+    {
+      "label": "productivity",
+      "text": "my calendar has no free time and I like it"
+    },
+    {
+      "label": "productivity",
+      "text": "I follow the 5am club and the 4 hour work week"
+    },
+    {
+      "label": "productivity",
+      "text": "I measure everything with KPIs including my weekend"
+    },
+    {
+      "label": "productivity",
+      "text": "I batch tasks and automate my workflow with scripts"
+    },
+    {
+      "label": "general",
+      "text": "I love pizza and watching movies with friends"
+    },
+    {
+      "label": "general",
+      "text": "I like going for walks with my dog in the park"
+    },
+    {
+      "label": "general",
+      "text": "I talk to my plants and they do not reply"
+    },
+    {
+      "label": "general",
+      "text": "I take a hundred selfies to post one"
+    },
+    {
+      "label": "general",
+      "text": "I am always late to family dinners"
+    },
+    {
+      "label": "general",
+      "text": "I listen to the same song on repeat all week"
+    },
+    {
+      "label": "general",
+      "text": "I love shopping for clothes I never wear"
+    },
+    {
+      "label": "general",
+      "text": "I cook pasta every day because it is the only thing I know"
+    },
+    {
+      "label": "general",
+      "text": "I overthink text messages before sending"
+    },
+    {
+      "label": "general",
+      "text": "I travel to the beach every summer"
+    },
+    {
+      "label": "general",
+      "text": "I collect mugs and coffee beans"
+    },
+    {
+      "label": "general",
+      "text": "I talk too much at parties"
+    },
+    {
+      "label": "general",
+      "text": "I binge watch tv shows on the weekend"
+    },
+    {
+      "label": "general",
+      "text": "I like spicy food but I cry every time"
+    },
+    {
+      "label": "general",
+      "text": "I forget names right after people introduce themselves"
+    },
+    {
+      "label": "general",
+      "text": "I sing in the shower loudly"
+    },
+    {
+      "label": "general",
+      "text": "I am a cat person who also likes dogs"
+    },
+    {
+      "label": "general",
+      "text": "I order the same thing at every restaurant"
+    },
+    {
+      "label": "general",
+      "text": "I lose my keys every morning"
+    },
+    {
+      "label": "general",
+      "text": "I take long walks and listen to podcasts about history"
+    },
+    {
+      "label": "general",
+      "text": "I wear sunglasses indoors"
+    },
+    {
+      "label": "general",
+      "text": "I give unsolicited advice to my friends"
+    },
+    {
+      "label": "general",
+      "text": "I enjoy gardening and baking bread"
+    },
+    {
+      "label": "general",
+      "text": "my fridge only has sauces and water"
+    },
+    {
+      "label": "general",
+      "text": "I laugh at my own jokes before finishing them"
+    },
+    {
+      "label": "general",
+      "text": "I watch cooking shows but order takeout"
+    },
+    {
+      "label": "general",
+      "text": "I get lost even with google maps"
+    },
+    {
+      "label": "general",
+      "text": "I keep starting new hobbies like guitar and painting"
+    },
+    {
+      "label": "general",
+      "text": "I am a morning person only on vacations"
+    },
+    {
+      "label": "general",
+      "text": "I take naps on sunday afternoons"
+    }
+  ]
+}
