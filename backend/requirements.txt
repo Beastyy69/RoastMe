@@ -1,0 +1,10 @@
+# Backend ke Python packages (pip install -r requirements.txt)
+fastapi==0.159.1  # web server framework (API banane ke liye)
+uvicorn==0.54.0  # FastAPI ko chalane wala server
+pydantic==2.14.1  # request data check (validation)
+scikit-learn==1.9.1  # ML: TF-IDF + Logistic Regression
+joblib==1.6.0  # trained model file save/load
+python-dotenv==1.2.4  # .env file padhna
+pymongo==4.19.0  # optional MongoDB history
+google-genai==2.33.0  # Google Gemini AI (roasts likhne ke liye)
+httpx==0.28.1  # NVIDIA API ko HTTP request bhejne ke liye
