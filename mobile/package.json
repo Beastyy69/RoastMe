@@ -1,0 +1,39 @@
+{
+  "name": "roastme-ai-mobile",
+  "version": "1.0.0",
+  "main": "expo-router/entry",
+  "dependencies": {
+    "@expo/vector-icons": "^15.0.2",
+    "@react-native-async-storage/async-storage": "2.2.0",
+    "expo": "~58.0.19",
+    "expo-clipboard": "~58.0.4",
+    "expo-constants": "~58.0.13",
+    "expo-dev-client": "~58.0.15",
+    "expo-font": "~58.0.9",
+    "expo-image-manipulator": "~58.0.15",
+    "expo-linking": "~58.0.14",
+    "expo-router": "~58.0.26",
+    "expo-sharing": "~58.0.20",
+    "expo-status-bar": "~58.0.4",
+    "expo-system-ui": "~58.0.6",
+    "react": "19.3.0",
+    "react-dom": "19.3.0",
+    "react-native": "0.88.0",
+    "react-native-nitro-image": "^0.15.2",
+    "react-native-nitro-modules": "^0.37.1",
+    "react-native-safe-area-context": "~5.10.1",
+    "react-native-screens": "~4.30.0",
+    "react-native-svg": "15.16.0",
+    "react-native-view-shot": "6.1.1",
+    "react-native-vision-camera": "^5.2.3",
+    "react-native-vision-camera-face-detector": "^2.1.0",
+    "react-native-web": "^0.21.4"
+  },
+  "scripts": {
+    "start": "expo start",
+    "android": "expo start --android",
+    "web": "expo start --web",
+    "build:android": "expo run:android"
+  },
+  "private": true
+}
