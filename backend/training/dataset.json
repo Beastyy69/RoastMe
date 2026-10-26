@@ -1,5 +1,5 @@
 {
-  "_about": "Small, hand-written illustrative dataset for RoastMe AI. It is NOT collected from real users and is far too small to represent real people. It only teaches the classifier rough topic vocabulary. See README > ML limitations.",
+  "_about": "Small, hand-written illustrative dataset for RoastMe AI, used ONLY as the test set: the model never trains on it. It is NOT collected from real users. See README > ML limitations.",
   "roast_categories": [
     {
       "label": "procrastination",

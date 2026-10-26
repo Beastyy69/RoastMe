@@ -3,11 +3,16 @@
 backend folder se chalao:
     python training/train_model.py
 
+Data do hisso me hai:
+    generated_examples.json = ~1100 NVIDIA ke likhe examples → model INHI se seekhta hai
+    dataset.json            = 150 haath se likhe examples → sirf TEST (model ne kabhi nahi dekhe)
+Isse jo accuracy aati hai wo imaandaar hai: model ko apne hi data pe nahi parakhte.
+
 Ye file banti hai (server start pe load hoti hai):
     app/ml/models/roast_category.joblib
 """
 
-import json  # dataset.json padhne ke liye
+import json  # JSON files padhne ke liye
 from datetime import datetime, timezone  # model kab train hua, wo time
 from pathlib import Path  # file paths aasaani se banane ke liye
 
@@ -15,11 +20,13 @@ import joblib  # trained model ko file me save karne ke liye
 import sklearn  # scikit-learn (version save karne ke liye)
 from sklearn.feature_extraction.text import TfidfVectorizer  # text → numbers
 from sklearn.linear_model import LogisticRegression  # classification model
-from sklearn.model_selection import StratifiedKFold, cross_val_score  # accuracy test karne ke tools
+from sklearn.metrics import accuracy_score, classification_report  # test ka result nikalne ke tools
+from sklearn.model_selection import StratifiedKFold, cross_val_score  # training data pe CV (sirf info ke liye)
 from sklearn.pipeline import FeatureUnion, Pipeline  # steps ko jodne ke liye
 
 BACKEND_DIR = Path(__file__).resolve().parent.parent  # backend/ folder ka path
-DATASET_PATH = BACKEND_DIR / "training" / "dataset.json"  # training data ki file
+TEST_PATH = BACKEND_DIR / "training" / "dataset.json"  # 150 haath se likhe (test)
+TRAIN_PATH = BACKEND_DIR / "training" / "generated_examples.json"  # NVIDIA ke likhe (training)
 MODELS_DIR = BACKEND_DIR / "app" / "ml" / "models"  # models yahan save honge
 
 
@@ -33,43 +40,53 @@ def build_pipeline():  # naya (untrained) model banao
         ]  # list band
     )  # FeatureUnion band
     # TF-IDF features → Logistic Regression (har category ki probability)
-    return Pipeline([("features", features), ("classifier", LogisticRegression(max_iter=3000, C=4.0))])
+    # C=16: sirf training data pe CV se chuna (test data dekhe bina)
+    return Pipeline([("features", features), ("classifier", LogisticRegression(max_iter=3000, C=16.0))])
 
 
-def train_and_save(examples, model_name):  # examples = [{"text":..., "label":...}, ...]
-    texts = [example["text"] for example in examples]  # sirf sentences ki list
-    labels = [example["label"] for example in examples]  # sirf categories ki list
+def train_and_save(train_examples, test_examples, model_name):  # training + test data
+    texts = [example["text"] for example in train_examples]  # training sentences
+    labels = [example["label"] for example in train_examples]  # training categories
+    test_texts = [example["text"] for example in test_examples]  # test sentences
+    test_labels = [example["label"] for example in test_examples]  # test categories
 
-    # Imaandaar test: 5-fold cross-validation (model ko unseen data pe check karo)
+    # Sirf info: training data ke andar 5-fold CV (ye number thoda zyada aata hai, asli test neeche hai)
     folds = StratifiedKFold(n_splits=5, shuffle=True, random_state=42)  # data ko 5 hisso me baanto
-    scores = cross_val_score(build_pipeline(), texts, labels, cv=folds, scoring="accuracy")  # 5 baar train+test
+    cv_scores = cross_val_score(build_pipeline(), texts, labels, cv=folds, scoring="accuracy")  # 5 baar train+test
 
     pipeline = build_pipeline()  # final model banao
-    # Final model saare data pe train karo
-    pipeline.fit(texts, labels)  # model seekh raha hai
+    pipeline.fit(texts, labels)  # model sirf generated data se seekhta hai
+
+    # Asli imaandaar test: 150 haath se likhe examples jo model ne kabhi nahi dekhe
+    predictions = pipeline.predict(test_texts)  # model ke jawab
+    test_accuracy = accuracy_score(test_labels, predictions)  # kitne sahi (0-1)
 
     # Model ke saath kuch info bhi save karo (/health pe dikhti hai)
     bundle = {  # sab ek dict me
         "pipeline": pipeline,  # trained model
         "labels": sorted(set(labels)),  # saari categories
-        "cv_accuracy": round(float(scores.mean()), 3),  # average accuracy
-        "training_examples": len(texts),  # kitne examples the
+        "test_accuracy": round(float(test_accuracy), 3),  # haath se likhe test set pe accuracy
+        "test_examples": len(test_texts),  # test me kitne examples
+        "training_examples": len(texts),  # kitne examples se seekha
         "trained_at": datetime.now(timezone.utc).isoformat(timespec="seconds"),  # kab train hua
         "sklearn_version": sklearn.__version__,  # kis version se (load karte waqt match hona chahiye)
     }  # bundle band
     output_path = MODELS_DIR / f"{model_name}.joblib"  # file ka naam
     joblib.dump(bundle, output_path)  # file me save karo
 
-    print(f"[{model_name}] {len(texts)} examples, {len(bundle['labels'])} labels")  # kitna data
-    print(f"[{model_name}] 5-fold CV accuracy: {scores.mean():.3f} (+/- {scores.std():.3f})")  # accuracy
+    print(f"[{model_name}] trained on {len(texts)} generated examples, {len(bundle['labels'])} labels")  # kitna data
+    print(f"[{model_name}] CV on training data (info only): {cv_scores.mean():.3f}")  # training ke andar ka score
+    print(f"[{model_name}] TEST accuracy on {len(test_texts)} hand-written examples: {test_accuracy:.3f}")  # asli number
+    print(classification_report(test_labels, predictions, digits=2))  # har category ka result
     print(f"[{model_name}] saved to {output_path.relative_to(BACKEND_DIR)}")  # kahan save hua
 
 
-# Dataset padho aur model train karo
+# Data padho aur model train karo
 def main():  # script ka main kaam
     MODELS_DIR.mkdir(parents=True, exist_ok=True)  # models folder nahi hai to bana do
-    dataset = json.loads(DATASET_PATH.read_text(encoding="utf-8"))  # JSON file padho
-    train_and_save(dataset["roast_categories"], "roast_category")  # topic model train
+    test = json.loads(TEST_PATH.read_text(encoding="utf-8"))["roast_categories"]  # 150 test examples
+    train = json.loads(TRAIN_PATH.read_text(encoding="utf-8"))["examples"]  # generated training examples
+    train_and_save(train, test, "roast_category")  # topic model train + test
 
 
 if __name__ == "__main__":  # file seedha chalayi gayi ho (import nahi)
